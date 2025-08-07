@@ -1,0 +1,2605 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage[a4paper, top=2cm, left=2cm, right=2cm, bottom=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{upgreek}
+\usepackage{times}
+\usepackage{enumerate}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{tcolorbox}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[R]{tspro}
+\begin{document}
+{\centering \section*{PHƯƠNG TRÌNH CHUYỂN ĐỘNG CỦA CHẤT ĐIỂM Ở GẦN BỀ MẶT TRÁI ĐẤT. ĐỊNH NGHĨA TRỌNG LỰC, TRỌNG LƯỢNG}\par}
+
+Trái đất chuyển động quanh trục của nó với vận tốc góc $\omega$ hầu như không đổi 
+$$\omega = \dfrac{2\pi}{24.3600} = 7,3.10^{-5} \text{ rad/s } \rightarrow \dot{\vec{\omega}} = 0$$ 
+
+Gắn hqc K' với trái đất có gốc O' là tâm của trái đất (K' là hqc phi quán tính). Tâm O' chuyển động 
+xung quanh mặt trời với gia tốc $\vec{a}_{o'}$ \\
+
+Bỏ sự tương tác của các hành tinh thuộc hệ mặt trời với chuyển động của mặt trời, ta 
+coi hqc K gắn với mặt trời có gốc O là tâm của mặt trời là hqc quán tính.\\
+
+Gọi $M_d , M_t$ là khối lượng của trái đất và mặt trời, $\, \vec{r}_{oo'} \, $ là vectơ 
+kẻ từ $O \rightarrow O'$, $\vec{f}$ là lực hút của mặt trời với trái đất, lực $\phi$ do các vật khác nào đó tác dụng lên chất điểm. 
+$$\vec{a}_{o'} = \dfrac{-\vec{f}}{M_d} = \dfrac{- G M_t M_d}{M_d \, \vec{r}_{oo'}^{\,3}}\,\vec{r}_{oo'}= \dfrac{-GM_t}{r_{oo'}^{\,3}}\,\vec{r}_{oo'}$$
+ 
+Phương trình chuyển động của chất điểm đối với hqc K' là 
+$$m\vec{a}\,' = \vec{F} + \vec{F}_{kt} + \vec{F}_c$$ 
+
+Gọi $\vec{r}\,' \, $ là bán kính vectơ kẻ từ tâm O' của trái đất đến chất điểm, $\vec{r} \, $ là bán kính vectơ kẻ từ tâm O của mặt trời đến chất điểm \\  
+
+$\vec{F}_{kt} = - m\vec{a}_o{'} - m \left[ \vec{\omega} \times \big[ \vec{\omega} \times \vec{r}\,'\big] \right]$\\
+
+$\vec{F} = \vec{F}_d + \vec{F}_t + \vec{\phi} = \dfrac{-G m M_d }{r'^3} \, \vec{r}\,' - \dfrac{G m M_t}{r^3} \,\vec{r} + \vec{\phi} $  \\
+
+$\vec{F}_c = -2m \big[ \vec{\omega} \times \vec{v}\,' \big]$
+
+$$\Rightarrow \quad \boxed{m\vec{a}\,' = \dfrac{-GmM_d}{ r'^3}\, \vec{r}\,' - \dfrac{GmM_t}{r^3} \,\vec{r} + \vec{\phi} - m\vec{a}_{o'} - m \left[ \vec{\omega} \times \big[ \vec{\omega} \times \vec{r}\,' \big] \right] - 2m \big[\vec{\omega } \times \vec{v}\,' \big] }$$
+
+Lực $\vec{P} = \big( \vec{F}_d + \vec{F}_{lt} \big)$ gọi là \textit{trọng lực} đặt lên chất điểm. Ta có thể viết biểu thức trọng lực tác dụng 
+lên chất điểm dưới dạng 
+$$\vec{P} = m \vec{g}  $$ 
+
+Trong đó $\, \vec{g} = -\dfrac{GM_d}{r'^3}\, \vec{r}\,' - \left[ \vec{\omega} \times \big[ \omega \times \vec{r}\,' \big]  \right]$ \, gọi là gia tốc 
+trọng trường
+
+\newpage 
+
+Xét trường hợp chất điểm đứng yên đối với trái đất $(\vec{v}\,' =0, \vec{a}\,' = 0)$ và $\phi$ là phản lực của giá đỡ hay dây 
+treo tác dụng lên chất điểm. Khi đó ta có 
+$$\vec{P} +  \vec{\phi} = 0$$
+
+Do lực vạn vật hấp dẫn và lực quán tính kéo theo tác dụng lên vật đứng yên mà vật đứng yên 
+ép lên giá đỡ hay kéo căng dây treo một lực $\vec{T}$ nào đó. Lực này gọi là trọng lượng của vật đối với hqc vật đứng yên. \\
+
+\textit{Trọng lượng của một vật là lực mà vật đứng yên tác dụng lên giá đỡ hay kéo căng dây treo do kết 
+quả tác dụng lên nó bởi các lực vạn vật hấp dẫn và lực quán tính kéo theo}\\
+
+Trọng lượng $\vec{T}$ của vật đối với hqc gắn liền với trái đất là lực trực đối với lực $\vec{\phi}$  $$\, \vec{T} = - \vec{\phi} = \vec{P}$$ 
+
+Khi $\vec{T} = 0 $ vật ở trạng thái mất trọng lượng \\
+
+Khi vật chuyển động nhanh dần đều lên trên $\vec{a}$ của vật hướng lên 
+\begin{align*}
+  &\vec{\phi} + \vec{P} + \vec{F}_{qt} = 0 \Rightarrow \vec{\phi} + \vec{P} -m\vec{a} = 0 \\
+&\vec{\phi} = m\vec{a} - \vec{P} = m \big(\vec{a} - \vec{g} \big)\\
+ &\phi = m \big( a + g) > mg    \\
+\Rightarrow & T = m (g+ a) > mg \quad \rightarrow \text{tăng trọng lượng }
+\end{align*}
+
+Khi vật chuyển động nhanh dần dều xuống dưới $\vec{a}$ của vật hướng xuống dưới 
+\begin{align*}
+&\vec{\phi} + \vec{P} + \vec{F}_{qt} = 0 \\
+ &\vec{\phi} = - m\vec{g} + m \vec{a} \\
+ &\phi = m | a - g| = m | g - a| < mg \\
+ \Rightarrow & T = m|g-a| <mg \quad \rightarrow \text{giảm trọng lượng}
+\end{align*}
+
+\newpage 
+{\centering \section*{ĐỊNH LÝ BIẾN THIÊN ĐỘNG NĂNG VÀ ĐỊNH LUẬT BẢO TOÀN CƠ NĂNG CỦA CHẤT ĐIỂM }  \par}
+
+Ta có $$\vec{F} = \dfrac{\text{d}\vec{P}}{\text{dt}} = \dfrac{\text{d}\left( m \vec{v}\right)}{\text{dt}}$$
+
+\begin{align*}
+\Rightarrow \quad \delta A &= \vec{F}\text{d}\vec{r} = \dfrac{\text{d}\left( m\vec{v}\right)}{\text{dt}} \, \text{d}\vec{r}  \\
+&= \text{d}\left( m\vec{v}\right) \dfrac{\text{d}\vec{r}}{\text{dt}} = \vec{v} \, \text{d}\left(m\vec{v}\right) \\
+&= \text{d}\left( \dfrac{1}{2}m\vec{v}^{\,2} \right) = \text{d}T 
+\end{align*}
+$$\boxed{\delta A = \text{d}T}$$
+
+$T = \dfrac{1}{2}mv^2\,$ động năng của chất điểm \\ 
+
+Phát biểu: vi phân động năng của chất điểm bằng công nguyên tố của lực trên dịch chuyển $\text{d}\vec{r}$  \\
+
+Lấy tích phân hai vế
+\begin{align*}
+A &= \int_{\vec{r}_0}^{\vec{r}} \vec{F}\text{ d}\vec{r} = \int_{v_0}^{v} \text{d} \left( \dfrac{1}{2}mv^2\right) \\[7pt]
+&= \dfrac{1}{2}mv^2 - \dfrac{1}{2}mv_0^2 = T - T_0 = \Delta T
+\end{align*}
+$$\boxed{A = \Delta T} $$  
+
+Phát biểu: biến thiên động năng của chất điểm trên một quãng đường hữu hạn nào đó bằng công của lực tác dụng lên chất điểm trên cùng quãng đường đó  \\
+
+Nếu $\vec{F}$ là lực thế $\, \delta A = -\text{d}U$ 
+$$\Rightarrow - \text{d}U = \text{d}T \rightarrow \text{d}(T + U) = 0 $$
+
+Định luật bảo toàn cơ năng 
+$$E = T + U = \dfrac{1}{2}mv^2 + U = \text{const}$$
+
+Phát biểu: chuyển động của chất điểm trong trường lực thế thì tổng cơ năng và động năng là đại lượng bảo toàn 
+\newpage 
+{\centering \section*{ĐỊNH LÝ BIẾN THIÊN VÀ ĐỊNH LUẬT BẢO TOÀN MOMENT XUNG LƯỢNG CỦA CHẤT ĐIỂM } \par}
+\setcounter{equation}{0}
+Nếu chất điểm chuyển động quay quanh một trục nào đó với vận tốc góc 
+$$\vec{\omega } = \dfrac{\text{d}\vec{\varphi}}{\text{dt}} \text{ thì } \text{ d} \vec{r}  = \big[ \vec{\omega} \text{dt} \times \vec{r}\big] = \big[\text{d}\vec{\varphi} \times \vec{r} \big]$$
+
+Và $$\vec{F} \, \text{d}\vec{r} = \vec{F} \big[ \text{d}\vec{\varphi} \times \vec{r} \big] = \big[ \vec{r} \times \vec{F}\, \big] \text{d}\vec{\varphi}$$
+
+Công của lực $\vec{F}$ là  
+$$A = \int \vec{F}\, \text{d}\vec{r} = \int \vec{M} \text{ d}\vec{\varphi}$$
+
+Trong đó $\vec{M} = \big[ \vec{r} \times \vec{F} \,\big]$ là moment của lực $\vec{F}$ đối với điểm O 
+\begin{equation}
+\vec{M} = \big[ \vec{r} \times \vec{F} \, \big] = \left[ \vec{r} \times  \dfrac{\text{d}\big(m\vec{v} \big)}{\text{dt}} \right] = \dfrac{\text{d}}{\text{dt}} \big[ \vec{r}  \times m\vec{v}\big] = 0
+\label{eq:1}
+\end{equation}
+
+$\vec{L} = \big[ \vec{r} \times m \vec{v} \big]$ là moment xung lượng của chất điểm đối với O \\
+
+\eqref{eq:1} $\rightarrow$ Định lý biến thiên moment xung lượng $ \quad \boxed{\vec{M} = \dfrac{\text{d}L}{\text{dt}} }$ \\
+
+\eqref{eq:1} $\rightarrow$ Định luật bảo toàn moment xung lượng $\quad \boxed{ \vec{L} = \big[ \vec{r} \times m\vec{v} \big] = \text{const}}$
+
+\newpage
+{\centering 
+\section*{BÀI TOÁN HAI VẬT}
+\par}
+ \setcounter{equation}{0}
+Bài toán hai vật là bài toán về chuyển động của một hệ kín gồm hai chất điểm với thế năng tương tác 
+chỉ phụ thuộc vào khoảng cách tương đối giữa các chất điểm đó\\
+
+ Xét chuyển động của một hệ kín gồm hai chất điểm $M_1$ và $M_2$ khối lượng $m_1$ và $m_2$. Gọi $\vec{r}_1$ và 
+ $\vec{r}_2$ là bán kính Vectơ xác định vị trí của chất điểm $M_1$ và $M_2$. Vectơ $\vec{r}=\vec{r}_2-\vec{r}_1$ xác định vị trí tương đối giữa hai chất điểm. 
+ Thế năng tương tác giữa hai chất điểm $U(r) = U(\left\lvert \vec{r}_2 - \vec{r}_1 \right\rvert )$ \\
+
+ Cho biết vị trí và vận tốc ban đầu của các chất điểm $M_1$ và $M_2$ tương ứng là $\vec{r}_{O1}, \vec{r}_{O2} $ và $\vec{v}_{O1}, \vec{v}_{O2}$ 
+ cho biết dạng của U(r). Cần xác định phương trình chuyển động và vận tốc của hai chất điểm ở thời điểm bất kì đối với hqc quán tính K \\
+  \begin{center}
+\textbf{Giải}
+  \end{center}
+
+ Chọn hệ quy chiếu K' có gốc gắn với khối tâm C của hệ kín cũng là hệ quy chiếu quán tính. \\
+
+ Gọi $\vec{r}_i\,'$ và $\vec{v}_i\,'$ là bán kính Vectơ xác định vị trí và vận tốc của chất điểm $M_i$ (i = 1, 2) đối với hệ quán tính K' \\
+
+ Vì hệ hai chất điểm đang khảo sát là hệ kín nên khối tâm C của hệ chuyển động thẳng đều đối với hqc quán tính K. Phương trình chuyển động của khối tâm có dạng:
+\begin{equation}
+ \vec{r}_c = \vec{V}_c\, t + \vec{r}_{oc}
+\end{equation}
+ Trong đó $\vec{r}_{oc}$ là bán kính Vectơ xác định vị trí của khối tâm C tại thời điểm $t=0$ và $\vec{V}_c$ là vận tốc của khối tâm C 
+ đối với hqc quán tính K. \\
+
+Vị trí và vận tốc của hệ quán tính K và K' liên hệ với nhau bằng hệ thức: 
+\begin{equation}
+\begin{cases}
+\vec{r}_i & = \vec{r}_c + \vec{r}_i\,'  \\
+\vec{v}_i & = \vec{V}_c +\vec{v}_i\,'
+\end{cases}
+\label{eq:3}
+\end{equation}
+
+Từ hệ thức \eqref{eq:2} suy ra:
+\begin{equation}
+\vec{r}= \vec{r}_2 - \vec{r}_1 = \vec{r}_2\,' - \vec{r}_1\,'
+\label{eq:2}
+\end{equation}
+
+ Lấy đạo hàm hai vế đẳng thức \eqref{eq:3} theo thời gian ta được:
+\begin{equation}
+\vec{v} = \vec{v}_2 -\vec{v}_1 = \vec{v}_2\,' - \vec{v}_1\,'
+\label{eq:3} 
+\end{equation}
+
+ Các phương trình chuyển động của chất điểm $M_1$ và $M_2$ đối với hqc K' có dạng:
+\begin{equation}
+m_1  \ddot{\vec{r}}_1 \,' = \vec{F}_{12}(\left\lvert \vec{r}_2 \,' -\vec{r}_1\,'\right\rvert ) = - \dfrac{\partial U(\left\lvert \vec{r}_2\,' - \vec{r}_1\,'\right\rvert )}{\partial \vec{r}_1} 
+\label{eq:ax}
+\end{equation}
+
+\begin{equation}
+m_2  \ddot{\vec{r}}_2 \,' = \vec{F}_{21}(\left\lvert \vec{r}_1 \,' -\vec{r}_2\,'\right\rvert ) = - \dfrac{\partial U(\left\lvert \vec{r}_1\,' - \vec{r}_2\,'\right\rvert )}{\partial \vec{r}_2} 
+\label{eq:axx}
+\end{equation}
+
+Ta biết vị trí khối tâm C của hqc K' là 
+$$\vec{r}_c\,' = \dfrac{m_1 \vec{r}_1\,' +m_2 \vec{r}_2\,'}{m_1 + m_2} $$
+ \newpage
+Vì gốc hqc K' trùng với khối tâm C nên $\vec{r}_c\,'=0$ suy ra 
+\begin{equation}
+m_1\vec{r}_1 \,' + m_2 \vec{r}_2 \,' = 0 
+\label{eq:x}
+\end{equation}
+
+Lấy đạo hàm hai vế \eqref{eq:x} theo thời gian ta được:
+
+\begin{equation}
+m_1\vec{v}_1 \,' + m_2\vec{v}_2 \,' = 0
+\label{eq:b}
+\end{equation}
+
+Từ \eqref{eq:3} và \eqref{eq:x} suy ra:
+\begin{equation}
+\vec{r}_1\,' = -\dfrac{m_2\vec{r}}{m_1+m_2} \hspace{2cm}
+\vec{r}_2\,' = \dfrac{m_1\vec{r}}{m_1+m_2}
+\label{eq:b}
+\end{equation}
+
+Đạo hàm hai vế phương trình \eqref{eq:b} 
+\begin{equation} 
+\vec{v}_1\,' = -\dfrac{m_2\vec{v}}{m_1+m_2} \hspace{2cm}
+\vec{v}_2\,' = \dfrac{m_1\vec{v}}{m_1+m_2}
+\end{equation}
+
+Đặt $\vec{r}_1\,'$ và $\vec{r}_2\,'$ từ \eqref{eq:b} vào \eqref{eq:ax} và \eqref{eq:axx} 
+với sự chú ý rằng 
+
+$$\dfrac{\partial U(r)}{\partial \vec{r}} = \dfrac{\partial U}{\partial \vec{r}_2\,' } = -\dfrac{\partial U}{\partial \vec{r}_1\,'} $$
+
+Suy ra phương trình : 
+$$\mu \ddot{\vec{r}} = -\dfrac{\partial U(r)}{\partial \vec{r}} = - \dfrac{dU}{dr} \dfrac{\vec{r}}{r} $$
+
+Với $\mu = \dfrac{m_1 m_2}{m_1+m_2}$ là khối lượng rút gọn của hệ hai chất điểm\\
+
+Phương trình được khảo sát như phương trình chuyển động của một chất điểm có khối lượng $\mu$ dưới tác 
+dụng của trường lực ngoài có tâm của lực cố định đặt ở gốc tọa độ có thế năng U(r).\\
+
+Mômen xung lượng $\vec{L}$ của hệ kín hai chất điểm đối với khối tâm C và hệ cơ năng E của nó đối với hqc khối tâm K' có dạng:
+$$\vec{L}= \big[ \vec{r}_1^{\,\prime} \times m_1 \vec{v}_1^{\,\prime} \big] + \big[ \vec{r}_2^{\,\prime} \times m_2 \vec{v}_2^{\,\prime} \big] = \text{const} $$
+
+\[
+E = \frac{m_1 v_1'^2}{2} + \frac{m_2 v_2'^2}{2} + U(r) = \text{const}
+\]
+
+Viết lại 
+   $$\vec{L}= \big[ \vec{r} \times \mu \vec{v} \, \big] = \text{const}$$
+
+$$E = \frac{\mu v^{2}}{2} + U(r) = \text{const}$$
+ \setcounter{equation}{0}
+   \newpage
+{\centering
+\section*{CHUYỂN ĐỘNG TRONG TRƯỜNG XUYÊN TÂM}
+\par}
+Tìm phương trình chuyển động và phương trình quỹ đạo của chất điểm $\mu$
+chuyển động trong trường xuyên tâm với thế năng $U(r)$ chỉ phụ thuộc vào khoảng cách r từ chất điểm 
+đến điểm cố định C là tâm của trường lực. \\
+Lực tác dụng lên chất điểm $\mu$ là 
+\begin{equation}
+\vec{F}=-\dfrac{\partial U}{\partial \vec{r}}=-\dfrac{\text{d}U}{\text{d}r}\dfrac{\vec{r}}{r}
+\end{equation}
+Mômen của lực $\vec{F}$ đối với khối tâm C luôn bằng không và do đó Mômen xung lượng của chất điểm $\mu$ đối với tâm C
+là đại lượng bảo toàn
+\begin{equation}
+\vec{M}=\big[ \,\vec{r}\times \vec{F}\,\big]=\Big[\vec{r}\times \mu \dfrac{\text{d}\vec{v}}{\text{dt}}\,\Big] = \dfrac{d}{dt} \big[\vec{r} \times \mu \vec{v}\big]=0
+\end{equation}
+Hay $$\vec{L}=\big[\, \vec{r}\times \mu \vec{v}\, \big]=\text{const}$$
+Xét chuyển động của chất điểm $\mu$ trong hệ tọa độ cực, gốc O trùng với tâm C của trường lực\\
+Vận tốc trong hệ tọa độ cực là $$\vec{v}=\dot{r}\vec{e_r}+r\dot{\varphi}\vec{e_\varphi}$$ 
+Vectơ vận tốc diện tích là $$\vec{\sigma} = \dfrac{1}{2} \big[\,\vec{r} \times \vec{v}\,\big]$$ 
+Mối liên hệ giữa Mômen động lượng và vận tốc diện tích là
+\begin{equation}
+\vec{L} = \big[\,\vec{r}\times \mu \vec{v}\,\big] = 2\mu \vec{\sigma}
+\end{equation}
+Vì Mômen động lượng $\vec{L}$ bảo toàn nên vận tốc diện tích của nó cũng là đại lượng bảo toàn 
+\begin{equation}
+L = 2\mu \sigma =\mu r v\sin(\vec{r},\vec{v}) =\mu r v_{\varphi}=\mu r^2 \dot{\varphi}
+\label{eq:4}
+\end{equation}
+Chất điểm $\mu$ chuyển động trong trường lực thế cho nên cơ năng của nó bảo toàn.
+\begin{equation}
+E = \dfrac{\mu v^{2} }{2} + U(r)= \dfrac{\mu}{2}(\dot{r^2}+r^2 \dot{{\varphi ^2}}) + U(r)= \text{const}
+\label{eq:5}
+\end{equation}
+Từ \eqref{eq:4} suy ra: $\dot{\varphi}=\dfrac{L}{\mu r^2}$, thay $\dot{\varphi}$ vào \eqref{eq:5}  ta được
+$$
+\dfrac{\mu}{2}\left( \dot{r^2}+ \dfrac{L^2}{\mu ^2 r^2 }\right) + U(r)= E
+$$
+\begin{equation}
+\Leftrightarrow \frac{\mu}{2}\dot{r^2} + \frac{L^2}{2\mu r^2} + U(r)= E
+\label{eq:6}
+\end{equation}
+\newpage
+Đặt $V(r) = U(r) + \dfrac{L^2}{2\mu r^2}$, với $V(r)$ là thế năng hiệu dụng. Thay vào \eqref{eq:6} ta được:
+
+$$ \dfrac{\mu}{2}\dot{r^2} + V(r) = E \Leftrightarrow \dot{r^2} = \dfrac{2}{\mu}\left[E-V(r)\right]$$
+\begin{equation}
+\Leftrightarrow \dot{r} = \frac{\text{d}r}{\text{dt}}=\pm \sqrt{\frac{2}{\mu}\Big[E-V(r)\Big]}
+\label{eq:7}
+\end{equation}
+    $$\Rightarrow \text{dt} = \pm \dfrac{\text{d}r}{\sqrt{\dfrac{2}{\mu}\Big[E-V(r)\Big]}}$$
+Lấy tích phân hai vế:
+\begin{equation}
+t = \pm \int \dfrac{\text{d}r}{\sqrt{\dfrac{2}{\mu}\Big[E-V(r)\Big]}} + t_0
+\label{eq:8}
+\end{equation}
+Trong đó $t_0 = \text{const}$  \\
+Ta có $\dot{\varphi_t}=\dfrac{L}{\mu r^{2}_{t}}$
+$$\Leftrightarrow \dfrac{\text{d}\varphi }{\text{dt}} = \dfrac{L}{\mu r^{2}_{t}} \Rightarrow \text{d}\varphi = \dfrac{L\text{dt}}{\mu r^{2}_{t}} $$
+Lấy tích phân hai vế: 
+\begin{equation}
+\varphi(t) = \dfrac{L}{\mu}\int \frac{\text{d}t}{r^{2}_t} + \varphi_0
+\label{eq:9}
+\end{equation}
+Trong đó $\varphi_0=\text{const}$. Các phương trình \eqref{eq:8} và \eqref{eq:9} là những phương trình chuyển động của chất điểm $\mu$.\\
+Rút dt từ \eqref{eq:7} thay vào \eqref{eq:9} ta nhận được phương trình quỹ đạo của chất điểm $\mu$
+\begin{equation}
+\varphi = \pm \int \dfrac{\dfrac{L\text{d}r}{\mu r^2}}{\sqrt{\dfrac{2}{\mu}\Big[E-V(r)\Big] }} + \varphi_0
+\label{eq:10}
+\end{equation}
+Ta thấy chuyển động trong trường xuyên tâm chỉ xảy ra khi 
+$$E-V(r) \geq 0$$
+Các giá trị của r thỏa mãn $E-V(r)=0$ xác định các điểm giới hạn của miền 
+chuyển động theo khoảng cách từ tâm của trường lực. Các điểm này gọi là điểm lùi của quỹ đạo. Tại các điểm này, $\dot{r}=0$ \\
+
+\indent Nếu chuyển động hạn chế bởi $r \geq r_{min}$ thì chuyển động của $\mu$ là vô hạn.\\
+
+\indent Nếu chuyển động hạn chế bởi $r_{min} \leq r \leq r_{max}$ thì chuyển động của $\mu$ là hữu hạn. 
+\newpage
+{\centering \section*{BÀI TOÁN KEPLER} \par}
+Bài toán Képler là bài toán chuyển động của chất điểm $\mu$ trong trường xuyên tâm với thế năng có dạng 
+$$U(r)=-\dfrac{\alpha}{r}$$
+Xét trường hợp $\alpha > 0$ thế hút, ví dụ $\alpha = -kq_1q_2$, \, $\alpha = -Gm_1m_2$ \\
+Từ \eqref{eq:10} ta có:
+\setcounter{equation}{0}
+\begin{equation}
+ \int \dfrac{\dfrac{L\text{dr}}{\mu r^2}}{\sqrt{\dfrac{2}{\mu} \left[E-\dfrac{L^2}{2\mu r^2} + \dfrac{\alpha}{r} \right] }} = \pm (\varphi - \varphi_0)
+\end{equation}
+$V(r)=\dfrac{L^2}{2\mu r^2}-\dfrac{\alpha}{r}$, $V(r)=0\Rightarrow \dfrac{1}{r}=\dfrac{2 \mu \alpha}{L^2}$ \\
+\begin{multicols}{2}
+$$ \dfrac{1}{r_d}=-\dfrac{b}{2a}=\dfrac{\alpha}{\frac{L^2}{2\mu}} = \dfrac{\mu \alpha}{L^2} \rightarrow r_d = \dfrac{L^2}{\mu \alpha} $$
+$$V_{min} = V_{r_d}=\dfrac{L^2}{2\mu}\cdot \left( \dfrac{2\mu \alpha}{L^2}\right)^2- \dfrac{\alpha \mu \alpha}{L^2}$$
+$$V_{min} = \dfrac{\mu \alpha ^2}{2L^2} - \dfrac{\mu \alpha ^2}{L^2}=\dfrac{-1}{2}\cdot \dfrac{\mu \alpha ^2}{L^2}$$
+\columnbreak
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Straight Lines [id:da5963662577999432] 
+\draw    (230.21,260.41) -- (230.21,178.94) -- (230.21,7.9) ;
+\draw [shift={(230.21,4.9)}, rotate = 90] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+%Straight Lines [id:da9273821607767008] 
+\draw    (192.72,197.78) -- (508.96,198.05) ;
+\draw [shift={(511.96,198.05)}, rotate = 180.05] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+%Curve Lines [id:da17262525709612664] 
+\draw    (234.54,29.73) .. controls (235.66,130.75) and (252.93,251.37) .. (294.82,238.16) ;
+%Curve Lines [id:da9931303131294446] 
+\draw    (294.82,238.16) .. controls (341.16,211.24) and (297.13,201.74) .. (488.16,202.95) ;
+%Straight Lines [id:da3355252280751273] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (263.13,196.87) -- (263.13,219.73) ;
+%Straight Lines [id:da2736212004598081] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (265.75,219.73) -- (229.16,220.22) ;
+%Straight Lines [id:da7879639701378471] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (291.7,239.75) -- (230.22,240.24) ;
+%Straight Lines [id:da28954078320337184] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (291.61,197.23) -- (291.14,240.14) ;
+
+% Text Node
+\draw (303.74,166.9) node  [font=\small] [align=left] {\begin{minipage}[lt]{18.62pt}\setlength\topsep{0pt}
+$\displaystyle \dfrac{L^{2}}{\mu \alpha ^{2}}$
+\end{minipage}};
+% Text Node
+\draw (197.2,238.14) node  [font=\small] [align=left] {\begin{minipage}[lt]{34.57pt}\setlength\topsep{0pt}
+$\displaystyle -\dfrac{1}{2}\dfrac{\mu \alpha ^{2}}{L^{2}}$
+\end{minipage}};
+% Text Node
+\draw (205.36,5.96) node  [font=\normalsize] [align=left] {\begin{minipage}[lt]{19.46pt}\setlength\topsep{0pt}
+$\displaystyle V( r)$
+\end{minipage}};
+% Text Node
+\draw (508.61,215.04) node  [font=\normalsize] [align=left] {\begin{minipage}[lt]{8.77pt}\setlength\topsep{0pt}
+$\displaystyle r$
+\end{minipage}};
+% Text Node
+\draw (217.65,183.34) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+O
+\end{minipage}};
+% Text Node
+\draw (265.6,167.19) node  [font=\small] [align=left] {\begin{minipage}[lt]{18.62pt}\setlength\topsep{0pt}
+$\displaystyle \dfrac{L^{2}}{2\mu \alpha ^{2}}$
+\end{minipage}};
+
+
+\end{tikzpicture}
+\end{multicols}
+
+\begin{align*}
+   \pm (\varphi - \varphi_0) &= \int \dfrac{\dfrac{L}{\mu r^2} \text{ dr}}{\left\{\dfrac{2}{\mu}\left[E - \dfrac{L^2}{2\mu r^2} + \dfrac{\alpha}{r}  \right] \right\} ^{1/2}}  
+= \int \dfrac{\dfrac{1}{r^2} \text{ dr}}{\left\{ \dfrac{\mu ^2}{L^2}\cdot \dfrac{2}{\mu} \left[E - \dfrac{L^2}{2\mu r^2} + \dfrac{\alpha}{r}  \right]    \right\}^{1/2}} \\[10pt]
+&= \int \dfrac{\dfrac{1}{r^2} \text{ dr}}{\left\{ \dfrac{2\mu}{L^2}\cdot  \left[E - \dfrac{L^2}{2\mu r^2} + \dfrac{\alpha}{r}  \right]    \right\}^{1/2}}  
+= \int \dfrac{\dfrac{1}{r^2} \text{ dr}}{\left\{\dfrac{2\mu E}{L^2} - \dfrac{1}{r^2} + 2 \dfrac{\mu \alpha }{L^2} \cdot \dfrac{1}{r}  \right\}^{1/2}} \\[10pt] 
+&= \int \dfrac{\dfrac{1}{r^2} \text{ dr}}{\left\{ \dfrac{2\mu E}{L^2} + \dfrac{\mu^2 \alpha^2}{r^4} - \left( \dfrac{1}{r^2} - 2\cdot \dfrac{1}{r}\cdot \dfrac{\mu \alpha}{r} + \dfrac{\mu^2 \alpha ^2}{L^4}  \right) \right\}^{1/2}} \\[10pt]
+\end{align*}
+\begin{align*}
+\pm (\varphi - \varphi_0)&= \int \dfrac{\dfrac{1}{r^2} \text{ dr}}{\left\{ \dfrac{2\mu E}{L^2} + \dfrac{\mu^2\alpha^2}{L^4}- \left(\dfrac{1}{r} - \dfrac{\mu \alpha}{L^2} \right)^2  \right\}^{1/2}} \\[10pt]
+\mp (\varphi - \varphi_0)&= \int \dfrac{\text{d}\left( \dfrac{1}{r}-\dfrac{\mu \alpha }{L^2} \right)}{\left\{ \dfrac{2\mu E}{L^2} + \dfrac{\mu^2\alpha^2}{L^4}- \left( \dfrac{1}{r} -\dfrac{\mu \alpha}{L^2}  \right)^2   \right\}^{1/2}} \\[10pt]
+\pm (\varphi - \varphi_0)&= \arccos \dfrac{\dfrac{1}{r}-\dfrac{\mu \alpha}{L^2}}{\sqrt{\dfrac{2\mu E}{L^2}+ \dfrac{\mu^2 \alpha ^2}{L^4}}}
+\end{align*}
+\begin{align*}
+\Rightarrow &\dfrac{1}{r}-\dfrac{\mu \alpha}{L^2} = \sqrt{\dfrac{2\mu E}{L^2}+ \dfrac{\mu^2 \alpha^2}{L^4}} \cos (\varphi - \varphi_0) \Leftrightarrow   
+ \dfrac{1}{r} = \dfrac{\mu \alpha}{L^2} + \sqrt{\dfrac{2\mu E}{L^2}+ \dfrac{\mu^2 \alpha ^2}{L^4}} \cos (\varphi - \varphi_0) \\[10pt] 
+ &r = \dfrac{1}{\dfrac{\mu \alpha}{L^2} + \sqrt{\dfrac{2\mu E}{L^2}+ \dfrac{\mu^2 \alpha ^2}{L^4}} \cos (\varphi - \varphi_0)} \Leftrightarrow 
+ r = \dfrac{\dfrac{L^2}{\mu \alpha}}{1 + \dfrac{L^2}{\mu \alpha} \sqrt{\dfrac{2\mu E}{L^2} + \dfrac{\mu^2 \alpha ^2}{L^4}} \cos (\varphi - \varphi_0)} \\[10pt]
+&r = \dfrac{\dfrac{L^2}{\mu \alpha}}{1 + \sqrt{\dfrac{2 L^2 E}{\mu \alpha} + 1 } \cos(\varphi - \varphi_0)}   \hspace{1.5cm} \text{đặt }
+\begin{cases}
+P = \dfrac{L^2}{\mu \alpha } \\[13pt] 
+e = \sqrt{\dfrac{2L^2 E}{\mu \alpha^2}+1}
+\end{cases}
+\end{align*}
+Với $e = 0 \Rightarrow \dfrac{2L^2E}{\mu \alpha}+1=0 \Rightarrow E = -\dfrac{\mu^2 \alpha^2}{2L^2}= V_{\text{min}}$ \\
+
+Quỹ đạo của chất điểm $\mu$ là đường tròn tâm $O$, bán kính $r = r_\text{đ} = \dfrac{L^2}{\mu \alpha}$ \\[10pt]
+Với $0 < e < 1 \Rightarrow 0 < \dfrac{2L^2E}{\mu \alpha^2}+1 <1 \Rightarrow -\dfrac{\mu \alpha^2}{2L^2} < E < 0$ \\
+
+Quỹ đạo của $\mu$ là elip $r_{\text{min}} \leq r \leq r_{\text{max}} \Leftrightarrow \dfrac{P}{1+e} \leq r \leq \dfrac{P}{1-e}$ \\[10pt]
+Với $e=1 \Rightarrow E = 0$ \\
+
+Quỹ đạo của chất điểm $\mu$ là parabol. $\mu$ chuyển động từ $r = \dfrac{L^2}{2\mu \alpha ^2} \rightarrow \infty$ \\[10pt] 
+Với $e > 1 \Rightarrow E > 0$ \\
+
+Quỹ đạo của chất điểm $\mu$ là hypebol. $\mu$ chuyển động từ $r_{\text{min}} \rightarrow \infty $ \\
+\newpage
+\noindent $\ast$ Đối với các hành tinh chuyển động xung quanh hệ mặt trời $\alpha = - Gm_1m_2$ $\rightarrow$ chuyển động là hữu hạn$\rightarrow$ quỹ đạo của các hành tinh là elip. Khi đó, ta xét 
+chuyển động của chất điểm $\mu$ là elip, ta có: 
+$$r_{\text{min}} = \dfrac{P}{1+e} \hspace{1cm} r_{\text{max}}= \dfrac{P}{1-e}$$
+Mặt khác 
+$
+\begin{cases}
+a = \dfrac{P}{1-e^2}  \\[10pt]
+b = \dfrac{P}{\sqrt{1-e^2}}
+\end{cases}
+$  $r = \dfrac{P}{1+e\cos (\varphi -\varphi_0)} \hspace{1cm} V_{\text{min}} = \dfrac{\mu \alpha^2}{2L^2}$ \\[10pt]
+
+Xét chuyển động của chất điểm $\mu$ là elip \\
+$a = \dfrac{P}{1 - e^2} = \dfrac{\dfrac{L^2}{\mu \alpha}}{1 - \left(- \dfrac{2L^2 \left\lvert E\right\rvert }{\mu \alpha^2} +1 \right)} = \dfrac{L^2}{\mu \alpha} \cdot \dfrac{\mu \alpha^2}{2 L^2 \left\lvert E\right\rvert } = \dfrac{\alpha}{2\left\lvert E\right\rvert } \hspace{1cm} (E < 0, E = -\left\lvert E\right\rvert) $ \\[10pt]
+$b = \dfrac{P}{\sqrt{1-e^2}}=\dfrac{\dfrac{L^2}{\mu \alpha}}{\sqrt{1 - \left( -\dfrac{2L^2 \left\lvert E\right\rvert }{\mu \alpha^2} -1 \right)}} = \dfrac{L^2}{\mu \alpha} \cdot \sqrt{ \dfrac{\mu \alpha^2}{2L^2\left\lvert E\right\rvert }} = \sqrt{\dfrac{L^2}{2\mu \left\lvert E\right\rvert}}$ \\[10pt]
+
+Nhận xét: $a$ chỉ phụ thuộc vào năng lượng, không phụ thuộc vào moment xung lượng. $b$ phụ thuộc vào cả năng lượng và moment xung lượng. \\
+
+\noindent $\ast$ Diện tích của elip: $S = \pi a b$ \\
+
+Mà $\sigma =\text{const}$, $\sigma = \dfrac{L}{2\mu} \Rightarrow S = \sigma T$ với $T$ là thời gian chuyển động của chất điểm $\mu$ hết 1 vòng elip
+
+$$\Rightarrow \pi ab = \dfrac{L}{2\mu} \cdot T \Leftrightarrow \pi^2 a^2b^2 = \dfrac{L^2}{4\pi^2}\cdot T^2 \Rightarrow \pi^2 a^2 \dfrac{1}{\left\lvert E\right\rvert } = \dfrac{1}{2\mu} \cdot T^2$$ \\
+$$\Rightarrow  \dfrac{\pi^2 a^2 2a}{\alpha} = \dfrac{1}{2\mu}\cdot T^2 \Rightarrow \dfrac{T^2}{a^3}= \dfrac{4\pi^2\mu}{\alpha}$$ \\
+
+Xét chuyển động thực của chất điểm $m_1, m_2, \mu = \dfrac{m_1m_2}{m_1+m_2}$. Khi chuyển động thì $m_1, C, m_2, \mu$ luôn thẳng hàng và $C$ cố định, do đó quỹ đạo của chất điểm $\mu$ 
+là elip thì quỹ đạo của $m_1, m_2$ cũng là elip \\
+\begin{tcolorbox}[title= Định luật 2, boxsep=2px]
+Vận tốc diện tích của mỗi hành tinh đối với Mặt Trời là một đại lượng không đổi. 
+\end{tcolorbox}
+\newpage
+
+\begin{multicols}{2}
+ $m_1$ là mặt trời, $m_2$ là các hành tinh chuyển động xung quanh mặt trời $(m_1 >> m_2)$ \\
+
+$\alpha = Gm_1m_2$ \\
+
+$a = \dfrac{\alpha}{2 \left\lvert E\right\rvert}=\dfrac{Gm_1m_2}{2\left\lvert E\right\rvert}$ \\
+
+$b = \dfrac{L}{\sqrt{2\mu\left\lvert E\right\rvert}}$
+  \columnbreak
+
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Straight Lines [id:da3420992954005412] 
+\draw    (347.56,228.28) -- (346.56,34.01) ;
+\draw [shift={(346.55,31.01)}, rotate = 89.71] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+%Straight Lines [id:da8363417116723062] 
+\draw    (164.53,146.22) -- (474.41,145.17) ;
+\draw [shift={(477.41,145.16)}, rotate = 179.81] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (8.93,-4.29) -- (0,0) -- (8.93,4.29) -- cycle    ;
+%Shape: Ellipse [id:dp9255256230473332] 
+\draw   (198.9,146.22) .. controls (198.9,112.17) and (250.52,84.57) .. (314.2,84.57) .. controls (377.87,84.57) and (429.49,112.17) .. (429.49,146.22) .. controls (429.49,180.27) and (377.87,207.87) .. (314.2,207.87) .. controls (250.52,207.87) and (198.9,180.27) .. (198.9,146.22) -- cycle ;
+%Straight Lines [id:da5124202849741177] 
+\draw    (364.19,157.14) -- (246.17,76.18) ;
+\draw [shift={(243.69,74.48)}, rotate = 34.45] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Shape: Ellipse [id:dp2697697641863075] 
+\draw   (320.72,145.62) .. controls (320.72,136.8) and (332.51,129.65) .. (347.05,129.65) .. controls (361.6,129.65) and (373.39,136.8) .. (373.39,145.62) .. controls (373.39,154.45) and (361.6,161.6) .. (347.05,161.6) .. controls (332.51,161.6) and (320.72,154.45) .. (320.72,145.62) -- cycle ;
+%Straight Lines [id:da998861745844443] 
+\draw    (291.4,106.98) -- (269.12,92) ;
+\draw [shift={(266.63,90.33)}, rotate = 33.91] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da9088730304753898] 
+\draw    (345.89,143.94) -- (361.75,155.39) ;
+\draw [shift={(364.19,157.14)}, rotate = 215.82] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+
+% Text Node
+\draw (265.55,68.97) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle \vec{r}$
+\end{minipage}};
+% Text Node
+\draw (383.14,153.34) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle \vec{r}_{1}$
+\end{minipage}};
+% Text Node
+\draw (293.11,121.84) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle \vec{r}_{2}$
+\end{minipage}};
+% Text Node
+\draw (340.11,152.99) node  [font=\normalsize] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+O
+\end{minipage}};
+% Text Node
+\draw (483.34,156.9) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+x
+\end{minipage}};
+% Text Node
+\draw (330.39,32.97) node  [font=\normalsize] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+y
+\end{minipage}};
+% Text Node
+\draw (316.69,101.36) node   [align=left] {\begin{minipage}[lt]{10.15pt}\setlength\topsep{0pt}
+$\displaystyle m_{2}$
+\end{minipage}};
+% Text Node
+\draw (362.79,171.36) node   [align=left] {\begin{minipage}[lt]{10.15pt}\setlength\topsep{0pt}
+$\displaystyle m_{1}$
+\end{minipage}};
+% Text Node
+\draw (243.35,89.07) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle \mu $
+\end{minipage}};
+
+
+\end{tikzpicture}
+\end{multicols}
+$r_2 \approx r = \dfrac{P}{1 + e\cos (\varphi - \varphi_0)} \rightarrow$ Định luật 1 
+\begin{tcolorbox}[title=Định luật 1,boxsep=2px]
+Mỗi hành tinh đều chuyển động theo elip mà Mặt Trời là một trong các tiêu điểm của nó.
+\end{tcolorbox}
+
+Từ công thức: 
+\begin{align*} 
+\vec{r}_{1} = &\dfrac{-m_2}{m_1+m_2} \,\vec{r} \rightarrow \vec{r}_{1\text{min(max)}} = \dfrac{-m_2}{m_1+m_2} \,\vec{r}_{\text{min(max)}} \\[10pt]
+\vec{r}_{2} = &\dfrac{m_1}{m_1+m_2} \,\vec{r} \rightarrow \vec{r}_{2\text{min(max)}} = \dfrac{m_1}{m_1+m_2} \,\vec{r}_{\text{min(max)}} \\
+\end{align*}
+$ \begin{cases}
+2a &=r_{\text{min}} + r_{\text{max}} \\
+2a_1 &= r_{1\text{min}} + r_{1\text{max}} \\
+2a_2 &= r_{2\text{min}} + r_{2\text{max}}
+\end{cases}$ 
+$\hspace{1cm} \Rightarrow \begin{cases} a_1 = \dfrac{m_2}{m_1+m_2} \,a \\[10pt] a_2 = \dfrac{m_1}{m_1+m_2} \,a \end{cases}$ \\[10pt]
+
+Chu kì $T = T_1=T_2$ \\
+\begin{equation}
+\begin{cases} 
+\dfrac{T^2}{a_1^3} = \dfrac{T^2}{\dfrac{m_2^3}{\left(m_1+m_2\right)^3} \cdot a^3} = \dfrac{\left(m_1+m_2\right)^3}{m_2^3} \cdot \dfrac{T^2}{a^3} = \dfrac{4\pi^2}{G\left(m_1 + m_2 \right)} \\[13pt]
+\dfrac{T^2}{a_2^3}=\dfrac{T^2}{\dfrac{m_1^3}{\left(m_1+m_2\right)^3} \cdot a^3}  = \dfrac{\left(m_1+m_2 \right)^3}{m_1} \cdot \dfrac{T^2}{a^3} = \dfrac{4\pi^2}{G\left(m_1+m_2\right)} \cdot \dfrac{\left(m_1+m_2\right)^3}{m_1^3} 
+\end{cases}
+\label{eq:2}
+\end{equation}
+
+Từ \eqref{eq:2} $\Rightarrow \dfrac{T_2^2}{a_2^3} = \dfrac{4\pi^2 \left(m_1+m_2\right)^2}{Gm_1^3}$ \quad vì $\, m_1 >> m_2 \rightarrow m_1+m_2 \approx m_1$ 
+$$\boxed{\dfrac{T^2}{a_2^3} \approx \dfrac{4\pi^2}{Gm_1} = \text{const}}$$
+\begin{tcolorbox}[title = Định luật 3, boxsep=2px]
+ Tỉ số giữa bình phương chu kì quay của
+các hành tinh và lập phương bán trục lớn của các quỹ đạo
+elip là một đại lượng không đổi và đối với mọi hành tinh
+đều có giá trị giống nhau
+\end{tcolorbox}
+
+ \newpage 
+{\centering \section*{NGUYÊN LÝ HAMILTON}\par}
+\setcounter{equation}{0}
+Cơ hệ Hôlônôm gồm N chất điểm, liên kết đặt lên cơ hệ 
+$$f_{\alpha}(\vec{r}_i,t) = 0 \hspace{1cm} \alpha = 1 \div n  $$
+
+Hoặc $$\sum_{i=1}^N \vec{A}_{\alpha i} \text{d}\vec{r}_i + B_\alpha \text{d}t = 0$$
+
+Có $s = 3N - n$ tọa độ suy rộng $q_k$ \\
+
+$q_k(\alpha, t)$ t là thời gian,  $\alpha$ là thông số bé, mỗi giá trị của $\alpha \neq 0$ cho ta 1 dịch chuyển khả dĩ. $\alpha = 0$ ứng với dịch chuyển thực\\
+$$\delta \vec{r}_i = \vec{r}_i(\alpha + \delta \alpha, t) - \vec{r}_i(\alpha, t)= \text{d}\vec{r}_i\,' - \text{d}\vec{r}_i$$
+Ta có $\vec{r}_i = \vec{r}_i(q_k, t), \hspace{0.25cm} q_k(\alpha, t)$
+\begin{align*}
+\text{d}\vec{r}_i &= \sum_{k= 1}^{s} \dfrac{\partial \vec{r}_i}{\partial q_k} \text{d}q_k + \dfrac{\partial r_i}{\partial t}\text{dt} \\
+\delta \vec{r}_i &= \sum_{k=1}^{s} \dfrac{\partial \vec{r}_i}{\partial q_k} \, \delta q_k 
+\end{align*}
+
+Nội dung nguyên lý: Xét dịch chuyển cơ hệ, từ thời điểm $t_1$ đến thời điểm $t_2$ và chỉ hạn chế xét các dịch chuyển 
+có chung điểm đầu ở thời điểm $t_1$ và thời điểm cuối ở $t_2$ \\
+
+Các dịch chuyển khả dĩ $(\alpha \neq 0, \alpha \text{ nhỏ} )$ là các đường nét đứt. Còn các dịch chuyển thực $\alpha = 0$ là các đường nét liền.\\
+ 
+Ông Hamilton đưa ra: Mỗi cơ hệ được đặc trưng bởi 1 hàm Lagrange   . L là hàm của $q_k, \dot{q_k} = \dfrac{\text{d}q_k}{\text{dt}}, t$ \\
+
+Đại lượng  $L\text{dt}$ tác dụng nguyên tố và 
+$$S = \int_{t_1}^{t_2} L\text{ dt} \hspace{0.5cm} \text{ Tác dụng của cơ hệ từ thời điểm } t_1 \text{ đến } t_2$$
+
+Nội dung: Dịch chuyển thực của cơ hệ từ thời điểm $t_1$ đến thời điểm $t_2$ chỉ xảy ra khi hàm tác dụng $S$ đạt giá trị cực trị (cực tiểu) 
+$$\frac{\partial S}{\partial \alpha } \big|_{\alpha = 0} = 0 \Leftrightarrow \delta S = \dfrac{\partial S}{\partial \alpha } \, \delta \alpha \Rightarrow \delta S = 0$$
+
+Từ nguyên lý Hamilton tìm phương trình Lagrange   loại 2 \\
+
+\begin{tcolorbox}[boxsep = 5px]
+$$\dfrac{\text{d}}{\text{dt}}\left(\dfrac{\partial L}{\partial \dot{q_k}} \right) - \dfrac{\partial L}{\partial q_k} = 0  $$
+\end{tcolorbox}
+Ta có 
+\begin{align}
+S &= \int_{t_1}^{t_2}L\,\text{dt} \nonumber \\
+\delta S &= \delta \left( \int_{t_1}^{t_2} L\, \text{dt} \right) = \int_{t_1}^{t_2} \left(\delta L  \right)\,\text{dt}  = 0 
+\label{eq:1}
+\end{align} 
+Mà  $L = L(q_k, \dot{q_k}, t)$, $q_k(\alpha, t)$, $\dot{q_k}(\alpha, t)$
+
+$$\delta L = \sum_{k = 1}^{s} \left( \dfrac{\partial L}{\partial q_k} \delta q_k + \dfrac{\partial L}{\partial \dot{q_k}} \delta \dot{q_k} \right)  $$
+$$\dot{q_k} =\dfrac{\text{d}q_k}{\text{dt}} \hspace{2cm} \delta \dot{q_k} = \dfrac{\text{d}}{\text{dt}} \delta q_k \nonumber $$
+\begin{align}
+\delta L &= \sum_{k =1}^{s} \left[\dfrac{\partial L}{\partial q_k} \delta q_k + \dfrac{\partial L}{\partial \dot{q_k}}\dfrac{\text{d}}{\text{dt}} \left( \delta q_k \right) \right] \nonumber \\
+ \delta L  &= \sum_{k =1}^{s} \left[ \dfrac{\partial L}{\partial q_k} \delta q_k + \dfrac{\text{d}}{\text{dt}} \left( \dfrac{\partial L}{\partial \dot{q_k}} \delta q_k \right) - \dfrac{\text{d}}{\text{dt}} \left(\dfrac{\partial L}{\partial \dot{q_k}}  \right) \delta q_k \right] \nonumber \\
+ \delta L &=  \sum_{k =1}^{s} \left[\dfrac{\partial L}{\partial q_k} - \dfrac{\text{d}}{\text{dt}}\left(\dfrac{\partial L}{\partial \dot{q_k}}  \right)  \right]  \delta q_k + \dfrac{\text{d}}{\text{dt}} \left( \dfrac{\partial L}{\partial \dot{q_k}} \, \delta q_k\right)
+\label{eq:2}
+\end{align}
+Thay \eqref{eq:2} vào \eqref{eq:1} ta được:
+$$\delta S = \int_{t_1}^{t_2} \sum_{k = 1}^{s} \left\{\left[\dfrac{\partial L}{\partial q_k} -\dfrac{\text{d}}{\text{dt}}\left(\dfrac{\partial L}{\partial \dot{q_k}}\right) \right] \delta q_k + \frac{\text{d}}{\text{dt}}\left(\dfrac{\partial L}{\partial \dot{q_k}}\delta q_k \right)   \right\} \text{dt} =0$$
+\begin{align}
+\delta S &= \int_{t_1}^{t_2} \left[\dfrac{\partial L}{\partial q_k} -\dfrac{\text{d}}{\text{dt}}\left(\dfrac{\partial L}{\partial \dot{q_k}}\right) \right] \delta q_k \, \text{dt} + \dfrac{\partial L}{\partial q_k} \delta q_k \bigg|_{t_1}^{t_2} = 0 \nonumber \\
+\delta S &= \int_{t_1}^{t_2} \left[\dfrac{\partial L}{\partial q_k} -\dfrac{\text{d}}{\text{dt}}\left(\dfrac{\partial L}{\partial \dot{q_k}}\right) \right] \delta q_k \, \text{dt}  = 0 \hspace{1cm} \forall \hspace{0.2cm} \delta q_k
+\label{eq:3}
+\end{align}
+
+ Vì $\delta q_k$ là các tọa độ độc lập nên ta có \eqref{eq:3} thỏa mãn $\forall$ $\delta q_k$ khi và chỉ khi các hệ số đứng trước $\delta q_k = 0$ 
+
+ $$\Rightarrow \dfrac{\partial L}{\partial q_k} - \dfrac{\text{d}}{\text{dt}}\left(\dfrac{\partial L}{\partial \dot{q_k}}\right) = 0 $$
+Hay 
+
+$$\boxed{ \dfrac{\text{d}}{\text{dt}}\left(\dfrac{\partial L}{\partial \dot{q_k}}\right) -\dfrac{\partial L}{\partial q_k}  = 0 }$$
+
+Hàm Lagrange   có dạng $L = T-U$ \\
+
+\newpage
+? Phương trình Lagrange   loại 2 cho cơ hệ Hôlônôm chịu tác dụng của cả lực thế và lực không thế sẽ có dạng như thế nào ?
+
+\begin{tcolorbox}[boxsep=5px]
+$$\dfrac{\text{d}}{\text{dt}}\left(\dfrac{\partial T}{\partial \dot{q_k}} \right) - \dfrac{\partial T}{\partial q_k} =Q_k$$
+\end{tcolorbox}
+
+$T$ là động năng của hệ \hspace{0.25cm} $\displaystyle T = \dfrac{1}{2} \sum _{k=1}^{N} m_i \vec{r}_i\,^2$ \\
+
+$Q_k$ là lực suy rộng \hspace{0.25cm} $Q_k = \dfrac{\delta A}{\delta q_k}$ \\
+
+Công nguyên tố của hệ  $$\delta A = \sum_{i = 1}^{N} \vec{F}_i \delta \vec{r}_i \hspace{0.5cm}\text{ mà } \hspace{0.5cm} \delta \vec{r}_i = \sum_{k=1}^{s} \dfrac{\partial \vec{r}_i}{\partial q_k} \delta q_k$$
+\begin{align*}
+\delta A &= \sum_{i=1}^{N} \vec{F}_i \left(\sum_{k=1}^{s} \dfrac{\partial \vec{r}}{\partial q_k} \delta q_k \right) \\
+\delta A &= \sum_{k=1}^{s} \left(\sum_{i = 1}^{N} \vec{F}_i \, \dfrac{\partial \vec{r}_i}{\partial q_k}   \right) \delta q_k \\
+\Rightarrow \delta A &= \sum_{k=1}^{s} Q_k \cdot \delta q_k
+\end{align*}
+
+Ta có  \hspace{0.25cm} $\displaystyle T = \dfrac{1}{2} \sum _{k=1}^{N} m_i \vec{r}_i\,^2 ,  \hspace{0.25cm} \vec{r}_i = \vec{r}_i(q_k, t), \, q_k(\alpha, t)$
+$$\dot{\vec{r}}=\dfrac{\text{d}}{\text{dt}} \vec{r}_i = \sum_{k=1}^{s} \dfrac{\partial \vec{r}_i}{\partial q_k} \dot{q_k} + \dfrac{\partial \vec{r}_i}{\partial t}$$
+$$\delta L = \delta(T-U)=\delta T - \delta U$$
+
+$\displaystyle \delta U \,= \sum_{i=1}^{N}  \vec{F}_i  \cdot \delta \vec{r}_i \Rightarrow \delta U = -\delta A_1 $ \hspace{0.20cm} trong đó $\delta A_1$ là công nguyên tố của các lực thế, $\vec{F}_i$ là lực thế \\
+
+$\displaystyle \delta A_2 = \sum_{i=1}^{N} \vec{f}_i \cdot \delta \vec{r}_i$ \hspace{0.20cm} trong đó $\vec{f}_i$ là các lực không phải lực thế \\
+
+Từ nguyên lý biến phân 
+\begin{equation}
+\delta S = \int_{t_1}^{t_2} \delta L \text{ dt} = \int_{t_1}^{t_2} (\delta T + \delta A) \text{ dt} = 0
+\end{equation}
+
+Mở rộng nguyên lý hamilton cho cơ hệ chịu tác dụng của cả lực thế và lực không thế 
+$$\int_{t_1}^{t_2} (\partial T + \delta A_1 + \delta A_2) \text{ dt} = 0$$ 
+
+Hay 
+\begin{equation}
+\int_{t_1}^{t_2} (\partial T + \delta A) \text{ dt} = 0 
+\label{eq:5}
+\end{equation}
+
+Với $\displaystyle \delta A = \delta A_1 + \delta A_2 =\sum_{i=1}^{N} (\vec{F}_i + \vec{f}_i) \delta \vec{r}_i$
+\begin{equation}
+ \delta A = \sum_{k =1 }^{s} Q_k \cdot \delta q_k
+ \label{eq:6}
+\end{equation}
+
+Tính tương tự ta có  
+\begin{equation}
+\delta T = \sum_{k=1}^{s} \left\{\left[\dfrac{\partial T}{\partial q_k} -\dfrac{\text{d}}{\text{dt}} \left( \dfrac{\partial T}{\partial \dot{q_k}}\right)  \right] \delta \dot{q_k} + \dfrac{\text{d}}{\text{dt}} \left( \dfrac{\partial T}{\partial \dot{q_k}} \,\delta q_k \right) \right\}
+\label{eq:7}
+\end{equation}
+
+Thay \eqref{eq:6}, \eqref{eq:7} vào \eqref{eq:5} 
+ 
+\begin{equation}
+\int_{t_1}^{t_2}\left\{ \left[ \dfrac{\partial T}{\partial q_k} -\dfrac{\text{d}}{\text{dt}} \left(\dfrac{\partial T}{\partial \dot{q_k}}\right) + Q_k \right] \delta q_k  +\dfrac{\text{d}}{\text{dt}} \left( \dfrac{\partial T}{\partial \dot{q_k}} \delta q_k  \right) \right\} \text{dt} = 0
+\end{equation}
+$$\Rightarrow \dfrac{\partial T}{\partial q_k} - \dfrac{\text{d}}{\text{dt}} \left( \dfrac{\partial T}{\partial \dot{q_k}} \right) + Q_k = 0$$
+
+Hay
+$$\boxed{\dfrac{\text{d}}{\text{dt}} \left( \dfrac{\partial T}{\partial \dot{q_k}} \right)-\dfrac{\partial T}{\partial q_k}  = Q_k}$$
+
+\newpage 
+
+{\centering \section*{NGUYÊN LÝ ĐỐI XỨNG CỦA KHÔNG GIAN, THỜI GIAN VÀ CÁC ĐỊNH LUẬT BẢO TOÀN} \par}
+\setcounter{equation}{0}
+Nguyên lý đối xứng của không gian và thời gian: trong hqc quán tính, không gian là đồng nhất và đẳng hướng, thời gian là đồng nhất. \\
+
+Xét cơ hệ gồm N chất điểm có N bán kính vectơ $\vec{r}_k$ và N vectơ vận tốc $\dot{\vec{r}}_k $ \\
+
+Số bậc tự do: $s = 3N, \hspace{0.2cm} (x_k, y_k, z_k) \text{ của }\vec{r}_k $ \\
+
+Hàm Lagrange   của cơ hệ kín $L(\vec{r}_k, \vec{v}_k, t)$, có N phương trình Lagrange   loại 2 dạng vectơ 
+$$\dfrac{\text{d}}{\text{dt}} \left(\dfrac{\partial L}{\partial \dot{q_k}}\right) - \dfrac{\partial L}{\partial q_k} = 0 \hspace{0.5cm} k = 1 \div N$$
+
+Hàm Lagrange   của hệ kín trên 
+$$L = \dfrac{1}{2} \sum_{k=1}^{N} m_k \cdot \vec{v}_k\,^2 - U(\vec{r}_k)$$
+
+$U(\vec{r}_k)$ thế năng tương tác giữa các chất điểm trong hệ \\
+
+Tính $\, \dfrac{\partial L}{\partial \vec{v}_l}$\\
+$$\dfrac{\partial L}{\partial \vec{v}_l} = \dfrac{1}{2} \sum_{k=1}^{N} 2 m_k  \vec{v}_k \cdot \dfrac{\partial \vec{v}_k}{\partial \vec{v}_l} = \sum_{k=1}^{N} m_k \vec{v}_k \delta_{kl} = m_l v_l = \vec{P}$$
+$$\Rightarrow \boxed{\dfrac{\partial L}{\partial \vec{v}_k} = \vec{P}_k = m_k \vec{v}_k}$$ \\
+
+
+\newpage
+\subsection*{Định luật bảo toàn động lượng của hệ kín} 
+
+Từ tính chất đồng nhất của không gian: trong hqc quán tính không gian là đồng nhất tại mọi điểm của không gian 
+đều tương đương với nhau về mặt vật lý, có nghĩa là khi ta tịnh tiến toàn bộ cơ hệ 1 vectơ $\delta \vec{r} \hspace{0.15cm}(\vec{r}_k \rightarrow \vec{r}_k + \delta \vec{r})$, vectơ vận tốc của các chất điểm trong hệ không thay
+ đổi $(\vec{v}_k \rightarrow \vec{v}_k) $ hàm Lagrange   của hệ không thay đổi $\delta L = 0$ đối với phép tịnh tiến. \\
+
+ Ta có: $L = L(\vec{r}_k, \vec{v}_k, t)$
+ \begin{equation}
+ \delta L = \sum_{k=1}^{N} \dfrac{\partial L}{\partial \vec{r}_k} \,\delta \vec{r}=0 \Leftrightarrow \sum_{k=1}^{N} \dfrac{\partial L}{\partial \vec{r}_k} =\vec{0}
+\label{eq:1} 
+\end{equation}
+
+Theo phương trình Lagrange   loại 2 cho cơ hệ kín 
+\begin{align}
+\dfrac{\text{d}}{\text{dt}} \left(\dfrac{\partial L}{\partial \vec{v}_k} \right) - \dfrac{\partial L}{\partial \vec{r}_k} = 0 \nonumber \\
+\Rightarrow \dfrac{\partial L}{\partial \vec{r}_k} = \dfrac{\text{d}}{\text{dt}} \left(\dfrac{\partial L}{\partial \vec{v}_k} \right)
+\label{eq:2}
+\end{align}
+
+Thay \eqref{eq:2} vào \eqref{eq:1} 
+\begin{align*}
+&\sum_{k=1}^{N} \dfrac{\partial L}{\partial \vec{r}_k} = \dfrac{\text{d}}{\text{dt}} \left( \sum_{k=1}^{N} \dfrac{\partial L}{\partial \vec{v}_k} \right) = \vec{0} \\
+&\sum_{k=1}^{N} \dfrac{\partial L}{\partial \vec{v}_k} =\sum_{k=1}^{N} m_k \vec{v}_k =\overrightarrow{\text{const}} \\
+\Rightarrow &\vec{P} = \sum_{k=1}^{N} \vec{P}_k = \sum_{k=1}^{N} m_k \vec{v}_k = \overrightarrow{\text{const}}
+\end{align*}
+\begin{tcolorbox}{Tổng động lượng của cơ hệ kín là đại lượng bảo toàn}
+$$\vec{P} = \sum_{k=1}^{N} m_k\vec{v}_k = \overrightarrow{\text{const}}$$ 
+\end{tcolorbox}
+\newpage
+\subsection*{Định luật bảo toàn moment động lượng của hệ}
+Từ tính chất đẳng hướng của không gian: trong hqc quán tính, không gian là đẳng hướng, theo mọi hướng của không gian 
+là như nhau về mặt vật lý, hay khi ta quay toàn bộ cơ hệ quay 1 trục $\Delta$ nào đó sao cho vận tốc
+ của chuyển động trong cơ hệ chỉ thay đổi về hướng và giữ nguyên độ lớn, thì hàm Lagrange   của hệ không thay đổi đối với phép quay trên $\delta L = 0$.
+
+\begin{multicols}{2}
+  \begin{align*}
+\left\lvert \delta \vec{r}_k\right\rvert &= R_k \delta \varphi \\
+&= r_k \sin \beta \cdot \delta \varphi \\
+&= \vec{r}_k \delta \varphi \sin (\delta \vec{\varphi}, \vec{r}_k)
+  \end{align*}
+  \begin{equation}
+  \begin{cases}
+\delta \vec{r}_k  &= \big[ \delta \vec{ \varphi}  \times \vec{r}_k \big] \\[5pt]
+\delta \vec{v}_k &= \big[ \delta \vec{ \varphi} \times \vec{v}_k \big]
+\end{cases} 
+\label{eq:3}
+\end{equation}
+  \columnbreak
+  \centering
+
+
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Straight Lines [id:da15642347230403186] 
+\draw    (319.7,249.81) -- (319.2,20.6) ;
+\draw [shift={(319.2,17.6)}, rotate = 89.88] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Shape: Ellipse [id:dp9377833098832756] 
+\draw   (237.4,96.61) .. controls (237.4,82.48) and (274.25,71.01) .. (319.7,71.01) .. controls (365.15,71.01) and (402,82.48) .. (402,96.61) .. controls (402,110.75) and (365.15,122.22) .. (319.7,122.22) .. controls (274.25,122.22) and (237.4,110.75) .. (237.4,96.61) -- cycle ;
+%Straight Lines [id:da955867529307753] 
+\draw    (319.7,249.81) -- (349.28,124.55) ;
+\draw [shift={(349.97,121.63)}, rotate = 103.29] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da2690929334890908] 
+\draw    (319.7,249.81) -- (394.28,110.31) ;
+\draw [shift={(395.69,107.67)}, rotate = 118.13] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da5245664280258242] 
+\draw    (319.7,249.81) -- (319,193.52) ;
+\draw [shift={(318.96,190.52)}, rotate = 89.29] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da08275073355448992] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (319.7,96.61) -- (349.97,121.63) ;
+%Straight Lines [id:da808868642743969] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (319.7,96.61) -- (395.69,107.67) ;
+%Curve Lines [id:da24208936843451367] 
+\draw    (310.5,50.33) .. controls (316.54,57.77) and (322.56,57.36) .. (328.32,50.82) ;
+\draw [shift={(330.12,48.57)}, rotate = 126.17] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (5.36,-2.57) -- (0,0) -- (5.36,2.57) -- cycle    ;
+%Curve Lines [id:da5761790386753649] 
+\draw    (320.45,185.07) .. controls (329.91,176.12) and (334.84,187.27) .. (334.84,185.72) ;
+%Straight Lines [id:da9994111577739455] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (319.7,96.61) -- (245.35,109.32) ;
+
+% Text Node
+\draw (329.9,162.65) node  [font=\small] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle \beta $
+\end{minipage}};
+% Text Node
+\draw (382.71,172.46) node  [font=\normalsize] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle \vec{r}_{k}$
+\end{minipage}};
+% Text Node
+\draw (296.17,202.28) node  [font=\normalsize] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle \delta \vec{\varphi }$
+\end{minipage}};
+% Text Node
+\draw (340.93,81.45) node  [font=\normalsize] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle \delta \varphi $
+\end{minipage}};
+% Text Node
+\draw (361.95,131.02) node  [font=\normalsize] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle \delta \vec{r}_{k}$
+\end{minipage}};
+% Text Node
+\draw (282,85.23) node  [font=\normalsize] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle R_{k}$
+\end{minipage}};
+% Text Node
+\draw (308.96,255.11) node  [font=\normalsize] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+O
+\end{minipage}};
+% Text Node
+\draw (334.57,25.81) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle \Delta $
+\end{minipage}};
+
+
+\end{tikzpicture}
+\end{multicols}
+Vậy 
+\begin{equation} 
+  \delta L = \sum_{k=1}^{N} \left(\dfrac{\partial L}{\partial \vec{r}_k} \, \delta \vec{r}_k + \dfrac{\partial L}{\partial \vec{v}_k} \, \delta \vec{v}_k \right)
+\label{eq:4}
+\end{equation}
+
+Thay \eqref{eq:3} vào \eqref{eq:4} ta được:
+\begin{equation} 
+\delta L = \sum_{k=1}^{N} \left(\dfrac{\partial L}{\partial \vec{r}_k}\,\big[\delta \vec{\varphi} \times \vec{r}_k\big]  + \dfrac{\partial L}{\partial \vec{v}_k}\, \big[\delta \vec{\varphi} \times \vec{v}_k\big] \right)
+\label{eq:5}
+\end{equation}
+
+Mặt khác 
+
+\begin{equation}
+\begin{cases}
+m_k \vec{v}_k = \vec{P}_k= \dfrac{\partial L}{\partial \vec{v}_k} \\[10pt]
+\dfrac{\text{d}}{\text{dt}} \left( \dfrac{\partial L}{\partial \vec{v}_k}  \right) = \dfrac{\partial L}{\partial \vec{r}_k} = \dot{\vec{P}}_k
+\end{cases}
+\label{eq:6}
+\end{equation}
+
+Thay \eqref{eq:6} vào \eqref{eq:5} 
+$$\delta L = \sum_{k=1}^{N} \left(\dot{\vec{P}}_k  \big[\delta \vec{\varphi} \times \vec{r}_k\big]  + \vec{P}_k \big[\delta \vec{\varphi} \times \dot{\vec{r}}_k\big]  \right)$$ 
+
+Áp dụng công thức $\vec{A} \left[ \vec{B} \times \vec{C} \right] = \vec{C} \left[\vec{A} \times \vec{B}\right] = \vec{B} \Big[\vec{C} \times \vec{A}\Big]$
+\begin{align*}
+  \delta L &= \sum_{k=1}^{N} \left( \delta \vec{\varphi} \left[\vec{r}_k \times \dot{\vec{P}}_k \right] + \delta \vec{\varphi} \left[ \dot{\vec{r}}_k \times \vec{P}_k  \right]  \right) \\
+  &= \delta \vec{\varphi} \sum_{k=1}^{N} \left(\left[\vec{r}_k \times \dot{\vec{P}}_k  \right]  + \left[ \dot{\vec{r}}_k \times \vec{P}_k  \right]   \right)   \\
+  &= \delta \vec{\varphi} \, \dfrac{\text{d}}{\text{dt}} \left(\sum_{k=1}^{N} \left[ \vec{r}_k \times \vec{P}_k   \right]\right)  = 0  \hspace{1cm} \forall  \, \delta \vec{\varphi} \\
+ & \Leftrightarrow \dfrac{\text{d}}{\text{dt}} \left( \sum_{k=1}^{N} \left[ \vec{r}_k \times \vec{P}_k \right] \right) = \vec{0}
+\end{align*}
+\begin{tcolorbox}[boxsep=5px]{Tổng moment xung lượng của hệ là đại lượng bảo toàn}
+$$L = \sum_{k=1}^{N} \left[ \vec{r}_k  \times \vec{P}_k \right] = \overrightarrow{\text{const}}$$
+\end{tcolorbox}
+
+
+$$\vec{M} = \sum_{k=1}^{N} \left[\vec{r}_k  \times  \vec{F}_k \right] \hspace{2cm}  \vec{F}_k^i = -\dfrac{\partial U}{\partial \vec{r}_k}$$
+Vì $$\delta L = \delta \vec{\varphi} \sum_{k=1}^{N} \left(\left[ \vec{r}_k \times \dot{\vec{P}}_k  \right] + \left[\dot{\vec{r}}_k \times \vec{P}_k    \right]   \right) = 0 \hspace{1.5cm} \forall \, \delta \vec{\varphi}$$
+
+\begin{equation}
+\Rightarrow \sum_{k=1}^{N} \left[\vec{r}_k \times \dfrac{\text{d}}{\text{dt}} \,\vec{P}_k  \right] = \vec{0}
+\label{eq:7}
+\end{equation}
+Mà 
+\begin{equation}
+\vec{F}_k^i = -\dfrac{\partial U}{\partial \vec{r}_k} = \dfrac{\partial (L-T)}{\partial \vec{r}_k}= \dfrac{\partial L}{\partial \vec{r}_k} = \dfrac{\text{d}}{\text{dt}} \left(\dfrac{\partial L}{\partial \dot{\vec{r}}_k}  \right) =\dfrac{\text{d}}{\text{dt}} \, \vec{P}_k
+\label{eq:8}
+\end{equation}
+
+Từ \eqref{eq:7} và \eqref{eq:8} $ \displaystyle \Rightarrow \sum_{k=1}^{N} \left[\vec{r}_k \times \vec{F}_k ^i  \right] = \vec{0}$  \, hay $\vec{M} =\vec{0}$ \\
+
+
+
+\newpage
+\subsection*{Định luật bảo toàn cơ năng của hệ kín} 
+Từ tính chất đồng nhất về thời gian trong hqc quán tính, thời gian là đồng nhất tại mọi thời điểm đều tương đương với nhau về mặt vật lý hay khi ta thay $t \rightarrow t + \delta t$ thì hàm Lagrange  của hệ không thay đổi, tức là Lagrange  không phụ 
+thuộc tường minh vào thời gian.
+\setcounter{equation}{0}
+$$L(t)=L(t+\delta t) \Rightarrow \dfrac{\partial L}{\partial t}=0$$
+
+Chú ý: $L(\vec{r}_k, \vec{v}_k, t),\, \vec{r}_k(t), \, \vec{v}_k(t)$ \\
+\begin{align*}
+\dfrac{\text{d}}{\text{dt}} L &= \sum_{k=1}^{N} \left(\dfrac{\partial L}{\partial \vec{r}_k} \,\dot{\vec{r}}_k + \dfrac{\partial L}{\partial \vec{v}_k}\, \dot{\vec{v}}_k  \right) \\
+&= \sum_{k=1}^{N} \left[\dfrac{\text{d}}{\text{dt}} \left(\dfrac{\partial L}{\partial \vec{v}_k} \, \vec{v}_k + \dfrac{\partial L}{\partial \vec{v}_k}\, \dot{\vec{v}}_k  \right) \right] \\
+ &= \dfrac{\text{d}}{\text{dt}} \left( \sum_{k=1}^{N} \dfrac{\partial L}{\partial \vec{v}_k} \, \vec{v}_k  \right) \\
+& \Rightarrow  \dfrac{\text{d}}{\text{dt}} \left( \sum_{k=1}^{N} \dfrac{\partial L}{\partial \vec{v}_k} \, \vec{v}_k - L   \right)  = 0
+\end{align*}
+$$\Rightarrow  E = \sum_{k=1}^{N} \dfrac{\partial L}{\partial \vec{v}_k} \, \vec{v}_k  - L = \text{const} $$
+
+Hay $$E = \sum_{k=1}^{N} m_k \vec{v}_k^{\,2} - \left( \dfrac{1}{2} \sum_{k=1}^{N} m_k \vec{v}_k^{\,2} - U \right)  $$
+
+\begin{tcolorbox}[boxsep=5px]{Cơ năng của hệ kín là đại lượng bảo toàn}
+  $$E = \dfrac{1}{2} \sum_{k=1}^{N} m_k \vec{v}_k^{\, 2} + U = T + U = \text{const}$$
+\end{tcolorbox}
+
+\newpage 
+{\centering 
+\section*{CÁC PHƯƠNG TRÌNH HAMILTON}
+\par}
+
+Mỗi cơ hệ được xác định bởi $s$ tọa độ suy rộng $q_k$ và $s$ xung lượng suy rộng $p_k$ thỏa mãn $p_k = \dfrac{\partial T}{\partial \dot{q}_k}$ Khi đó cơ hệ được đặc trưng bởi một hàm Hamilton $H(q_k, p_k,t)$. Tọa độ suy rộng và xung lượng suy rộng $(q_k, p_k)$ sẽ thỏa mãn từ phương trình 
+Hamilton $(2s)$ phương trình: \\
+
+$
+\begin{cases}
+\dot{q}_k = \dfrac{\partial H}{\partial p_k} \\[15pt]
+\dot{p}_k = -\dfrac{\partial H}{\partial q_k}\\
+\end{cases}
+$ $k=1\div s$ các phương trình Hamilton \\
+
+Hình thức luận trên gọi là hình thức luận Hamilton. Ta có $L = L(q_k, \dot{q}_k, t)$ 
+\begin{equation}
+\text{d}L=\sum_{k=1}^{N} \left(\dfrac{\partial L}{\partial q_k} \, \text{d}q_k + \dfrac{\partial L}{\partial \dot{q}_k} \, \text{d}\dot{q}_k   \right) + \dfrac{\partial L}{\partial t} \, \text{dt}
+\label{eq:1}
+\end{equation}
+Ta có $L = T -U = T(q_k,\dot{q}_k,t)-U(q_k,t)$
+\begin{equation}
+\Rightarrow p_k = \dfrac{\partial T}{\partial \dot{q}_k} = \dfrac{\partial L }{\partial \dot{q}_k} \hspace{1cm} \text{ vì } \dfrac{\partial U}{\partial \dot{q}_k} =0
+\label{eq:2}
+\end{equation}
+
+Theo phương trình Lagrange  loại 2 $$\dfrac{\text{d}}{\text{dt}} \left(\dfrac{\partial L}{\partial \dot{q}_k} \right) - \dfrac{\partial L}{\partial q_k} = 0$$
+\begin{equation}
+\Rightarrow  \dfrac{\partial L}{\partial q_k} = \dfrac{\text{d}}{\text{dt}} \left(\dfrac{\partial L}{\partial \dot{q}_k} \right) = \dot{p}_k
+\label{eq:3}
+\end{equation}
+
+Thay  \eqref{eq:2}, \eqref{eq:3} vào \eqref{eq:1} 
+\begin{align*}
+\text{d}L &= \sum_{k=1}^{s} \left(\dot{p}_k \text{ d}q_k + p_k \text{ d} \dot{q}_k  \right) + \dfrac{\partial L}{\partial t} \text{ dt} \\
+&= \sum_{k=1}^{s} \left[\dot{p}_k \text{ d}q_k + \text{d} \left(p_k  \dot{q}_k \right) - \dot{q}_k \text{ d} p_k   \right] + \dfrac{\partial L}{\partial t} \text{ dt} 
+\end{align*}
+\begin{equation}
+\text{d} \left( \sum_{k=1}^{s} p_k \dot{q}_k - L   \right) = \sum_{k=1}^{s} \left[ - \dot{p}_k \text{ d}q_k + \dot{q}_k \text{ d}p_k \right] - \dfrac{\partial L}{\partial t} \text{ dt}
+\label{eq:4}
+\end{equation}
+
+Lại có 
+\begin{equation}
+\text{d}H = \sum_{k=1}^{s} \left(\dfrac{\partial H}{\partial q_k} \text{ d} q_k + \dfrac{\partial H}{\partial p_k}\text{ d}p_k \right) + \dfrac{\partial H}{\partial t} \text{ dt}
+\label{eq:5}
+\end{equation}
+
+Đồng nhất 2 vế phương trình \eqref{eq:4} và \eqref{eq:5}
+\begin{align*}
+  \raggedright
+\begin{cases}
+ \displaystyle H = \sum_{k=1}^{s} p_k \dot{q}_k - L \\[15pt]
+\dot{q}_k = \dfrac{\partial H}{\partial p_k} \, \, , \hspace{1cm} \dot{p}_k = -\dfrac{\partial H}{\partial q_k} \\[15pt]
+\dfrac{\partial H}{\partial t} = - \dfrac{\partial L}{\partial t}
+\end{cases}
+\end{align*}
+$$H = \sum_{k=1}^{s} p_k \dot{q}_k - L = T + U = E$$
+\newpage 
+{\centering \section*{VẬN TỐC VÀ GIA TỐC CỦA ĐIỂM THUỘC VẬT RẮN,\\ VẬN TỐC GÓC VÀ GIA TỐC GÓC}\par} 
+\setcounter{equation}{0} 
+ \vspace{0.25cm}
+Vị trí của chất điểm $M_k$ thuộc vật rắn đối với hệ tọa độ động Oxyz được xác định bởi bán kính vectơ $\vec{r}_k$, đối với hệ tọa độ 
+cố định $O_1XYZ$ được xác định bởi vectơ bán kính $\vec{R}_k$. Vị trí gốc O của hệ tọa độ động xyz đối vối hệ tọa độ
+cố định XYZ được xác định bởi bán kính vectơ $\vec{R}_o$ 
+
+\begin{multicols}{2}
+
+Ta có \begin{equation}\vec{R}_k = \vec{R}_o + \vec{r}_k   \label{eq:1}\end{equation} 
+
+Đạo hàm hai vế theo thời gian 
+\begin{align}
+\text{d} \vec{R}_k &= \text{d} \vec{R}_o + \text{d}\vec{r}_k \nonumber\\
+\dfrac{\text{d}}{\text{dt}}\vec{R}_k &= \vec{V}_k = \vec{V}_o + \dfrac{\text{d}}{\text{dt}}\vec{r}_k \\ \nonumber
+\end{align} 
+\columnbreak
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Straight Lines [id:da6133809372817808] 
+\draw    (239.1,205.56) -- (238.58,86.35) ;
+\draw [shift={(238.57,83.35)}, rotate = 89.75] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da06622499123839642] 
+\draw    (239.1,205.56) -- (397.1,204.62) ;
+\draw [shift={(400.1,204.61)}, rotate = 179.66] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da18842936070629468] 
+\draw    (238.57,205.76) -- (163.91,254.56) ;
+\draw [shift={(161.4,256.2)}, rotate = 326.83] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Shape: Free Drawing [id:dp5879970473905572] 
+\draw  [line width=0.75] [line join = round][line cap = round] (313.57,127.17) .. controls (303.2,107.68) and (318.99,88.7) .. (330.63,76.57) .. controls (353.7,52.55) and (427.3,48.48) .. (430.07,98.57) .. controls (430.44,105.18) and (433.38,114.5) .. (428.61,118.37) .. controls (405.49,137.16) and (383.88,147.44) .. (355.01,149.17) .. controls (345.92,149.72) and (336.74,150.43) .. (327.71,149.17) .. controls (317.06,147.7) and (318.26,125.27) .. (310.16,122.22) ;
+%Straight Lines [id:da1766591188458786] 
+\draw    (365.75,115.35) -- (353.52,184.52) ;
+\draw [shift={(353,187.48)}, rotate = 280.02] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da8641582528100489] 
+\draw    (365.75,115.35) -- (451.75,84.46) ;
+\draw [shift={(454.57,83.44)}, rotate = 160.24] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da7512078495171508] 
+\draw    (365.75,115.35) -- (310.24,48.72) ;
+\draw [shift={(308.32,46.41)}, rotate = 50.21] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da43770962670036195] 
+\draw    (238.57,205.76) -- (361.11,79.58) ;
+\draw [shift={(363.2,77.43)}, rotate = 134.16] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da7995237461785337] 
+\draw    (365.32,115.5) -- (364.44,80.43) ;
+\draw [shift={(364.36,77.43)}, rotate = 88.55] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da3791532197685433] 
+\draw    (238.57,205.76) -- (362.88,117.24) ;
+\draw [shift={(365.32,115.5)}, rotate = 144.55] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+
+% Text Node
+\draw (221.87,194.01) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle O_{1}$
+\end{minipage}};
+% Text Node
+\draw (178.16,265.7) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle X$
+\end{minipage}};
+% Text Node
+\draw (410.83,213.54) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle Y$
+\end{minipage}};
+% Text Node
+\draw (228.02,77.3) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle Z$
+\end{minipage}};
+% Text Node
+\draw (378.59,124.62) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle O$
+\end{minipage}};
+% Text Node
+\draw (365.79,187.12) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle x$
+\end{minipage}};
+% Text Node
+\draw (463.02,98.48) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle y$
+\end{minipage}};
+% Text Node
+\draw (325.02,40.02) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle z$
+\end{minipage}};
+% Text Node
+\draw (276.88,129.91) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle \vec{R}_{k}$
+\end{minipage}};
+% Text Node
+\draw (314.77,170.17) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle \vec{R}_{o}$
+\end{minipage}};
+% Text Node
+\draw (378.26,94.6) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle \vec{r}_{k}$
+\end{minipage}};
+% Text Node
+\draw (372.25,69.42) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle M_{k}$
+\end{minipage}};
+\end{tikzpicture}
+\end{multicols}
+
+Ta có 
+$\, \vec{r}_k = x_k \,\vec{i} + y_k \,\vec{j} + z_k \, \vec{k} \, $ và $\, \dot{x}_k = 0; \dot{y}_k = 0; \dot{z}_k = 0 $ 
+\begin{align*}
+\dfrac{\text{d}}{\text{dt}} \vec{r}_k &= \vec{v}_k = \dot{x}_k \, \vec{i} + \dot{y}_k \, \vec{j} + \dot{z}_k \, \vec{k}  + x \, \dfrac{\text{d} \vec{i}}{\text{dt}} + 
+y \, \dfrac{\text{d} \vec{j}}{\text{dt}} + z \, \dfrac{\text{d} \vec{k}}{\text{dt}}  \\[7pt]
+&=  x \, \dfrac{\text{d} \vec{i}}{\text{dt}} + y \, \dfrac{\text{d} \vec{j}}{\text{dt}} + z \, \dfrac{\text{d} \vec{k}}{\text{dt}}
+\end{align*}
+
+Ta có $\, \vec{i}^{\,2} = 1 \Rightarrow 2\vec{i} \, \,\dfrac{\text{d} \vec{i}}{\text{dt}} = 0 \Rightarrow \vec{i}  \perp \dfrac{\text{d} \vec{i}}{\text{dt}} \,$  \big(tương tự $\, \vec{j} \perp \dfrac{\text{d}\vec{j}}{\text{dt}}; \, \vec{k} \perp \dfrac{\text{d} \vec{k}}{\text{dt}} $ \big) \\ 
+\begin{align*}
+\Rightarrow \dfrac{\text{d} \vec{i}}{\text{dt}} &= a_{12} \, \vec{j} + a_{13} \, \vec{k} \\[7pt]
+\dfrac{\text{d}\vec{j}}{\text{dt}}&= a_{21} \, \vec{i} + a_{23} \, \vec{k} \\[7pt] 
+\dfrac{\text{d}\vec{k}}{\text{dt}} &= a_{31} \, \vec{i} + a_{32} \, \vec{j}
+\end{align*}
+
+Mặt khác $\, \vec{i} \, . \, \vec{j} = 0 \Rightarrow \dfrac{\text{d} \vec{i}}{\text{dt}} \, \vec{j} + \dfrac{\text{d}\vec{j}}{\text{dt}} \, \vec{i} = 0 \Leftrightarrow \dfrac{\text{d}\vec{i}}{\text{dt}} \, \vec{j} = - \dfrac{\text{d} \vec{j}}{\text{dt}} \, \vec{i} \Leftrightarrow a_{12} = - a_{21} = \omega_z$  \\
+
+Tương tự $\, a_{23} = - a_{32} = \omega_x\,$ và $\, a_{31}= - a_{13} = \omega_{y}$
+
+\newpage 
+\begin{align*}
+\Rightarrow \dfrac{\text{d}\vec{i}}{\text{dt}} &= \omega_z \, \vec{j} - \omega_y \, \vec{k} \\[7pt]
+\dfrac{\text{d}\vec{j}}{\text{dt}} &=  \omega_x \, \vec{k} - \omega_z \, \vec{i} \\[7pt]
+\dfrac{\text{d}\vec{k}}{\text{dt}} &= \omega_y \, \vec{i} - \omega_x \, \vec{j}
+\end{align*}
+
+$\vec{\omega}(\omega_x , \omega_y, \omega_z)$ là vectơ vận tốc góc quay quanh 1 trục đi qua O \\ 
+\begin{align*}
+\Big[\vec{\omega} \times \vec{i}\,\Big ] &= \begin{vmatrix} \vec{i} & \vec{j} & \vec{k} \\ 
+\omega_x & \omega_y & \omega_z \\
+1 & 0 & 0
+\end{vmatrix} = \omega_z \,\vec{j}- \omega_y \, \vec{k} = \dfrac{\text{d}\vec{i}}{\text{dt}} \\[10pt]
+\Big[\vec{\omega} \times \vec{j}\,\Big ] &= \begin{vmatrix} \vec{i} & \vec{j} & \vec{k} \\ 
+\omega_x & \omega_y & \omega_z \\
+0 & 1 & 0
+\end{vmatrix} = \omega_x \,\vec{k}- \omega_z \, \vec{i} = \dfrac{\text{d}\vec{j}}{\text{dt}} \\[10pt]
+\Big[\vec{\omega} \times \vec{k}\,\Big ] &= \begin{vmatrix} \vec{i} & \vec{j} & \vec{k} \\ 
+\omega_x & \omega_y & \omega_z \\
+0 & 0 & 1
+\end{vmatrix} = \omega_y \,\vec{i}- \omega_x \, \vec{j} = \dfrac{\text{d}\vec{z}}{\text{dt}}
+\end{align*}
+
+Ta được $\, \dfrac{\text{d}\vec{r}_k}{\text{dt}} = \big[\vec{\omega} \times \vec{r}_k  \big]$
+
+\begin{equation}
+  \boxed{\vec{V}_k = \vec{V}_o + \big[ \vec{\omega} \times \vec{r}_k \big]  } 
+  \label{eq:3}
+\end{equation}
+
+Gia tốc của chất điểm $M_k$ thuộc vật rắn là 
+\begin{align}
+\vec{a}_k = \dfrac{\text{d}\vec{V}_k}{\text{dt}} &= \dfrac{\text{d}\vec{V}_o}{\text{dt}} + \dfrac{\text{d}}{\text{dt}}\big[\vec{\omega} \times \vec{r}_k \big] \nonumber \\[7pt]
+&= \dfrac{\text{d}\vec{V}_o}{\text{dt}} + \left[ \dfrac{\text{d}\vec{\omega}}{\text{dt}} \times \vec{r}_k \right] + \left[ \vec{\omega} \times \dfrac{\text{d}\vec{r}_k}{\text{dt}} \right] \nonumber \\[7pt]
+&= \vec{a}_o + \left[\dot{\vec{\omega}} \times \vec{r}_k  \right] + \Big[ \vec{\omega} \times \big[\vec{\omega} \times \vec{r}_k \big] \Big]
+\label{eq:5}
+\end{align}
+
+\newpage 
+
+Chuyển động tự do của vật rắn được khảo sát như vật đồng thời tham gia các chuyển động sau: chuyển động tịnh tiến 
+cùng với gốc O với vận tốc $\, \vec{V}_o \,$ đồng thời quay quanh trục OZ' với vận tốc góc $\dot{\vec{\varphi}}$, quay quanh 
+trục Oz với vận tốc góc $\dot{\vec{\Psi}}$, quay quanh trục ON với vận tốc góc $\dot{\vec{\theta}}$ 
+
+\begin{figure}[h]
+\centering
+
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Straight Lines [id:da4338893565408387] 
+\draw    (271.67,184.1) -- (271.09,35.75) ;
+\draw [shift={(271.08,32.75)}, rotate = 89.78] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da6822260255702075] 
+\draw    (147.48,184.91) -- (425.79,182.7) ;
+\draw [shift={(428.79,182.67)}, rotate = 179.54] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da3857811552257736] 
+\draw    (271.67,184.1) -- (182.59,263.08) ;
+\draw [shift={(180.35,265.07)}, rotate = 318.44] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da6314983631474301] 
+\draw    (272.27,183.85) -- (324.8,44.22) ;
+\draw [shift={(325.86,41.42)}, rotate = 110.62] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da08350137269601232] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (270.68,73.48) -- (307.13,94.04) ;
+%Straight Lines [id:da01919439896648556] 
+\draw    (272.27,183.85) -- (377.65,245.33) ;
+\draw [shift={(380.25,246.84)}, rotate = 210.26] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da37065701582763366] 
+\draw    (272.27,183.85) -- (176.02,218.33) ;
+\draw [shift={(173.19,219.34)}, rotate = 340.29] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da9849267257677026] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (307.13,91.04) -- (306.91,203.49) ;
+%Straight Lines [id:da8679885225600887] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (306.91,203.49) -- (324.12,182.93) ;
+%Straight Lines [id:da8279216012247852] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (250.56,203) -- (306.91,203.49) ;
+%Shape: Arc [id:dp6633784776091669] 
+\draw  [draw opacity=0] (236.36,214.65) .. controls (233.27,215.58) and (229.69,214.38) .. (227.35,211.29) .. controls (225.14,208.37) and (224.62,204.55) .. (225.73,201.44) -- (233.59,205.53) -- cycle ; \draw   (236.36,214.65) .. controls (233.27,215.58) and (229.69,214.38) .. (227.35,211.29) .. controls (225.14,208.37) and (224.62,204.55) .. (225.73,201.44) ;  
+%Shape: Arc [id:dp3025223662850143] 
+\draw  [draw opacity=0] (324.86,184.16) .. controls (327.6,188.83) and (328.32,194.31) .. (326.31,198.99) .. controls (323.89,204.67) and (318.14,207.66) .. (311.79,207.24) -- (310.09,190.49) -- cycle ; \draw   (324.86,184.16) .. controls (327.6,188.83) and (328.32,194.31) .. (326.31,198.99) .. controls (323.89,204.67) and (318.14,207.66) .. (311.79,207.24) ;  
+%Shape: Arc [id:dp4884661537065108] 
+\draw  [draw opacity=0] (271.59,148.66) .. controls (274.05,145.87) and (277.06,144.61) .. (279.61,145.68) .. controls (282.1,146.73) and (283.58,149.75) .. (283.81,153.51) -- (275.34,158.13) -- cycle ; \draw   (271.59,148.66) .. controls (274.05,145.87) and (277.06,144.61) .. (279.61,145.68) .. controls (282.1,146.73) and (283.58,149.75) .. (283.81,153.51) ;  
+%Shape: Arc [id:dp8711588289569185] 
+\draw  [draw opacity=0] (211.19,205.46) .. controls (209.11,204.39) and (207.33,202.76) .. (206.06,200.59) .. controls (203.35,195.99) and (203.57,190.05) .. (206.11,184.77) -- (221.1,189.75) -- cycle ; \draw   (211.19,205.46) .. controls (209.11,204.39) and (207.33,202.76) .. (206.06,200.59) .. controls (203.35,195.99) and (203.57,190.05) .. (206.11,184.77) ;  
+%Straight Lines [id:da9894322780351882] 
+\draw    (272.1,176.66) -- (271.59,106.37) ;
+\draw [shift={(271.57,103.37)}, rotate = 89.59] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da5064407761073988] 
+\draw    (271.48,183.91) -- (345.79,182.72) ;
+\draw [shift={(348.79,182.67)}, rotate = 179.08] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da4672334692006429] 
+\draw    (271.48,183.91) -- (221.39,228.88) ;
+\draw [shift={(219.16,230.88)}, rotate = 318.09] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da5553548967587434] 
+\draw    (272.27,184.35) -- (305.09,95.85) ;
+\draw [shift={(306.13,93.04)}, rotate = 110.35] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+
+% Text Node
+\draw (260.11,167.63) node   [align=left] {\begin{minipage}[lt]{8.79pt}\setlength\topsep{0pt}
+$\displaystyle O$
+\end{minipage}};
+% Text Node
+\draw (195.9,268.33) node   [align=left] {\begin{minipage}[lt]{8.79pt}\setlength\topsep{0pt}
+$\displaystyle x$
+\end{minipage}};
+% Text Node
+\draw (430.49,197.51) node   [align=left] {\begin{minipage}[lt]{8.79pt}\setlength\topsep{0pt}
+$\displaystyle y$
+\end{minipage}};
+% Text Node
+\draw (261.64,29) node   [align=left] {\begin{minipage}[lt]{8.79pt}\setlength\topsep{0pt}
+$\displaystyle z$
+\end{minipage}};
+% Text Node
+\draw (339.03,41.84) node   [align=left] {\begin{minipage}[lt]{8.79pt}\setlength\topsep{0pt}
+$\displaystyle Z'$
+\end{minipage}};
+% Text Node
+\draw (163.5,216.37) node   [align=left] {\begin{minipage}[lt]{8.79pt}\setlength\topsep{0pt}
+$\displaystyle N$
+\end{minipage}};
+% Text Node
+\draw (356.69,251.54) node   [align=left] {\begin{minipage}[lt]{8.79pt}\setlength\topsep{0pt}
+$\displaystyle M$
+\end{minipage}};
+% Text Node
+\draw (215.52,184.55) node [anchor=north west][inner sep=0.75pt]   [align=left] {$\displaystyle \vec{n}$};
+% Text Node
+\draw (175.49,187.43) node [anchor=north west][inner sep=0.75pt]   [align=left] {$\displaystyle -\Psi $};
+% Text Node
+\draw (208.2,209.17) node [anchor=north west][inner sep=0.75pt]   [align=left] {$\displaystyle \Psi $};
+% Text Node
+\draw (333.06,192.6) node [anchor=north west][inner sep=0.75pt]   [align=left] {$\displaystyle \Psi $};
+% Text Node
+\draw (318.56,88.6) node [anchor=north west][inner sep=0.75pt]   [align=left] {$\displaystyle \vec{R}$};
+% Text Node
+\draw (232.56,223.6) node [anchor=north west][inner sep=0.75pt]   [align=left] {$\displaystyle \vec{i}$};
+% Text Node
+\draw (334.06,149.1) node [anchor=north west][inner sep=0.75pt]   [align=left] {$\displaystyle \vec{j}$};
+% Text Node
+\draw (254.06,90.1) node [anchor=north west][inner sep=0.75pt]   [align=left] {$\displaystyle \vec{k}$};
+% Text Node
+\draw (276.06,123.6) node [anchor=north west][inner sep=0.75pt]   [align=left] {$\displaystyle \theta $};
+% Text Node
+\draw (286.39,95.07) node [anchor=north west][inner sep=0.75pt]   [align=left] {$\displaystyle \vec{e}$};
+
+
+\end{tikzpicture}
+\end{figure}
+
+Theo định lí cộng vận tốc, vận tốc của chất điểm
+$M_k$ bất kì của vật rắn
+\begin{align}
+\vec{V}_k &= \vec{V}_o + \Big[ \dot{\vec{\varphi}} \times \vec{r}_k \Big] + \Big[ \dot{\vec{\Psi}} \times \vec{r}_k \Big] + \Big[ \dot{\vec{\theta}} \times \vec{r}_k \Big] \nonumber \\[7pt]
+&= \vec{V}_o + \Big[ \left( \dot{\vec{\varphi}} + \dot{\vec{\Psi}} + \dot{\vec{\theta}} \, \right) \times \vec{r}_k \Big]
+\end{align}
+
+Từ \eqref{eq:3} và \eqref{eq:5} suy ra: 
+\begin{equation}
+\vec{\omega} = \dot{\vec{\varphi}} + \dot{\vec{\Psi}} + \dot{\vec{\theta}}
+\label{eq:6}
+\end{equation}
+
+Gọi $\vec{e}\,$ là vectơ trên trục OZ', $\vec{n}\,$ là vectơ đơn vị trên đường nút ON. Ta có 
+
+\begin{equation}
+\dot{\vec{\varphi}} = \dot{\varphi} \, \vec{e} \,; \hspace{0.5cm} \dot{\vec{\Psi}} = \dot{\Psi} \, \vec{k} \,; \hspace{0.5cm} \dot{\vec{\theta}} = \dot{\theta} \, \vec{n}
+\end{equation}
+
+Từ hình vẽ ta có 
+\begin{align}
+\vec{n} &= \vec{i} \cos \Psi - \vec{j} \sin \Psi \label{eq:8}\\
+\vec{e} &= \vec{i} \sin \theta \sin \Psi + \vec{j} \sin \theta \cos \Psi + \vec{k} \cos \theta \label{eq:9}
+\end{align}
+ 
+Từ các hệ thức \eqref{eq:6}, \eqref{eq:7}, \eqref{eq:8} và \eqref{eq:9} ta nhận được 
+$$\vec{\omega} = \vec{i} \, \omega_x + \vec{j} \, \omega_y + \vec{k} \, \omega_z $$
+
+Trong đó 
+\begin{equation}\begin{cases} 
+   \omega_x &= \dot{\varphi} \sin \theta \sin \Psi + \dot{\theta} \cos \Psi \\
+   \omega_y &= \dot{\varphi} \sin \theta \cos \Psi - \dot{\theta} \sin \Psi \\
+   \omega_z &= \dot{\varphi} \cos \theta + \dot{\Psi}
+\end{cases} 
+\label{eq:10}
+\end{equation} \\
+
+ Các phương trình \eqref{eq:10} là các phương trình động học của Euler
+
+
+
+\newpage 
+{\centering \section*{ĐỘNG NĂNG CỦA VẬT RẮN \\ 
+MOMENT QUÁN TÍNH } }
+Xét hệ tọa độ $O_1XYZ$ đứng yên, hệ tọa độ $Oxyz$ gắn với vận rắn.  $\vec{R}_k$ bán kính vectơ xác định vị trí $M_k$ đối với hệ tọa độ $O_1XYZ$, $\vec{R}_o$ bán kính vectơ xác đinh 
+vị trí $O$ đối $O_1$, $\vec{r}_k$ bán kính xác định vị trí $M_k$ đối với $Oxyz$ \\
+
+Ta có
+\setcounter{equation}{0}
+\begin{equation}
+\vec{R}_k = \vec{R}_o + \vec{r}_k
+\label{eq:1}
+\end{equation}
+
+Đạo hàm hai vế phương trình \eqref{eq:1} theo thời gian ta có:
+
+\begin{equation}
+\vec{V}_k = \vec{V}_o + \left[ \vec{\omega} \times \vec{r}_k  \right]
+  \label{eq:2}
+\end{equation}
+
+Động năng của vật rắn  
+\begin{align*}
+T &= \dfrac{1}{2} \sum_{k}^{} m_k \vec{V}_k^2 = \dfrac{1}{2}\sum_{k} \left( \vec{V}_o + \left[ \vec{\omega} \times \vec{r}_k  \right]  \right)^2 \\ 
+&= \dfrac{1}{2} \sum_k m_k \vec{V}_o^2 + \sum_k m_k \vec{V}_o \left[\vec{\omega} \times \vec{r}_k \right] + \dfrac{1}{2} \sum_k m_k \left[ \vec{\omega} \times \vec{r}_k  \right]^2 \\
+&= \dfrac{1}{2} \sum_k m_k\vec{V}_o^2   + \vec{V}_o \bigg[ \vec{\omega} \times \sum_k m_k \vec{r}_k \bigg] + \dfrac{1}{2} \sum m_k \left[ \vec{\omega} \times \vec{r}_k\right]^2 
+\end{align*}
+
+Chọn điểm O trùng với khối tâm của vật rắn, ta có:
+
+$$\displaystyle \vec{R}_c =  \dfrac{\sum_{k}^{} m_k \vec{R}_k}{\sum_{k} m_k} \quad , \vec{r}_c = \dfrac{\sum_{k} m_k \vec{r}_k}{\sum_{k} m_k}$$
+
+Với chú ý: $\displaystyle \sum_k m_k = m$ là khối lượng của vật rắn. Khi $O \equiv C \rightarrow \vec{r}_c = \vec{0} \Rightarrow \displaystyle \sum_k m_k \vec{r}_k = 0$  \\
+$$T = \dfrac{1}{2} m \vec{V}_c^{\,2} + \dfrac{1}{2}\sum_{k}^{} m_k \left[\vec{\omega} \times \vec{r}_k \right]^2 $$ 
+
+\begin{multicols}{2}
+Ta có
+
+$$\left\lvert \vec{\omega} \times \vec{r}_k \right\rvert = \omega \, r_k \sin (\alpha _k) \\
+= \omega \, d_k$$ 
+
+\begin{align*}
+T &= \dfrac{1}{2} m\vec{V}_c^{\,2} + \dfrac{1}{2} \sum_k m_k \, \omega^2 \, d_k^{\,2} \\
+&= \dfrac{1}{2} m \vec{V}_c^{\,2} + \dfrac{1}{2} \left( \sum_k m_k \, d_k^{\,2} \right) \omega^2
+\end{align*}
+\columnbreak
+
+
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Straight Lines [id:da27958974165617456] 
+\draw    (336.7,254.45) -- (336.22,48.36) ;
+\draw [shift={(336.21,45.36)}, rotate = 89.87] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Shape: Ellipse [id:dp0566094302458664] 
+\draw  [line width=0.75]  (257.4,113.15) .. controls (257.4,100.11) and (292.9,89.54) .. (336.7,89.54) .. controls (380.5,89.54) and (416,100.11) .. (416,113.15) .. controls (416,126.19) and (380.5,136.76) .. (336.7,136.76) .. controls (292.9,136.76) and (257.4,126.19) .. (257.4,113.15) -- cycle ;
+%Straight Lines [id:da8449242793177805] 
+\draw    (336.7,254.45) -- (365.15,139.14) ;
+\draw [shift={(365.87,136.23)}, rotate = 103.86] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da6640858036424527] 
+\draw    (336.7,254.45) -- (408.46,125.97) ;
+\draw [shift={(409.92,123.35)}, rotate = 119.19] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da723063921250267] 
+\draw    (336.7,254.45) -- (336.03,202.76) ;
+\draw [shift={(335.99,199.76)}, rotate = 89.26] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da14731290502360128] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (336.7,113.15) -- (365.87,136.23) ;
+%Straight Lines [id:da8774850946181897] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (336.7,113.15) -- (409.92,123.35) ;
+%Curve Lines [id:da022056430901213564] 
+\draw    (327.84,70.47) .. controls (333.59,77.25) and (339.32,76.96) .. (344.82,71.12) ;
+\draw [shift={(346.74,68.84)}, rotate = 127.38] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (5.36,-2.57) -- (0,0) -- (5.36,2.57) -- cycle    ;
+%Curve Lines [id:da759134549330097] 
+\draw    (337.42,194.73) .. controls (346.54,186.48) and (351.28,196.77) .. (351.28,195.34) ;
+%Straight Lines [id:da3472113157939505] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (336.7,113.15) -- (265.06,124.87) ;
+%Straight Lines [id:da4678061371909762] 
+\draw    (336.41,253.27) -- (335.73,171.12) ;
+\draw [shift={(335.71,168.12)}, rotate = 89.52] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+
+% Text Node
+\draw (344.78,177.06) node  [font=\small] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle \alpha _{k}$
+\end{minipage}};
+% Text Node
+\draw (397.49,183.1) node  [font=\normalsize] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle \vec{r}_{k}$
+\end{minipage}};
+% Text Node
+\draw (314.1,210.61) node  [font=\normalsize] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle \delta \vec{\varphi }$
+\end{minipage}};
+% Text Node
+\draw (357.23,99.17) node  [font=\normalsize] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle \delta \varphi $
+\end{minipage}};
+% Text Node
+\draw (377.49,144.88) node  [font=\normalsize] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle \delta \vec{r}_{k}$
+\end{minipage}};
+% Text Node
+\draw (300.45,102.65) node  [font=\normalsize] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle d_{k}$
+\end{minipage}};
+% Text Node
+\draw (351.1,47.85) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle \Delta $
+\end{minipage}};
+% Text Node
+\draw (324.11,171.08) node   [align=left] {\begin{minipage}[lt]{9.96pt}\setlength\topsep{0pt}
+$\displaystyle \vec{\omega }$
+\end{minipage}};
+% Text Node
+\draw (341.18,269.28) node   [align=left] {\begin{minipage}[lt]{45.84pt}\setlength\topsep{0pt}
+ $\displaystyle O\equiv \ C$
+\end{minipage}};
+
+
+\end{tikzpicture}
+\end{multicols}
+\newpage 
+$I_c = \displaystyle \sum_k m_k d_k^{\,2}$: moment quán tính của vật rắn đối với trục quay $\Delta$ đi qua C \\
+
+Hoặc $\displaystyle J_c = \iiint \limits_{\text{V}} r^2 \, \text{dm} = \iiint \limits_{\text{V}} \rho \, r^2 \, \text{dV}$ trong đó $r$ là khoảng cách từ dV đến trục quay $\Delta$
+
+
+
+$$T = \dfrac{1}{2}m \vec{V}_C^{\,2} + \dfrac{1}{2} J_{\Delta _c} \omega^2 = T_{\text{tịnh tiến}} + T_{\text{quay}}$$
+
+Kết luận: chuyển động của vật rắn được phân tích thành hai chuyển động: chuyển động tịnh tiến cùng khối tâm C và chuyển động quay quanh một trục $\Delta _c$ đi qua khối tâm C. Động 
+năng của vật rắn khi đó gồm 2 phần là động năng tịnh tiến và động năng quay quanh 1 trục $\Delta _c$ đi qua C. \\
+
+$\vec{\omega} = (\omega_x, \omega_y, \omega_z) \quad, \vec{r}_k = (x_k , y_k, z_k)$ \\ 
+
+Ta có 
+\begin{align}
+\left[\vec{\omega} \times \vec{r}_k\right] &= 
+\begin{vmatrix}
+\vec{i} & \vec{j} & \vec{k} \\
+\omega_x & \omega_y & \omega_z \\
+x_k & y_k & z_k
+\end{vmatrix} \nonumber \\
+&= \left(\omega_y z_k - \omega_z y_k \right)\vec{i} + \left(\omega_z x_k - \omega_x z_k \right) \vec{j} + \left(\omega_x y_k - \omega_y x_k \right)\vec{k} \nonumber \\[10pt]
+\Rightarrow \left[\vec{\omega} \times \vec{r}_k \right]^2 &=  \left(\omega_y z_k - \omega_z y_k \right)^2 + \left(\omega_z x_k - \omega_x z_k \right)^2 + \left(\omega_x y_k - \omega_y x_k \right)^2  \nonumber\\
+&= \left( \displaystyle y_k^{\,2} + z_k^{\,2} \right)  \omega_x^{\,2} + \left( z_k^{\,2} + x_k^{\,2} \right) \omega_y^{\,2} + \left( x_k^{\,2} + y_k^{\,2} \right) \omega_z^{\,2} \nonumber \\ & \quad - 2 x_k y_k \omega_x \omega_y -2 y_k z_k \omega_y \omega_z -2 z_k x_k \omega_z \omega_x  
+\end{align}
+
+Xét biểu thức động năng quay 
+\begin{align*}
+T_q &= \dfrac{1}{2} \sum_k m_k \left[\vec{\omega} \times \vec{r}_k \right]^2 \\
+&= \dfrac{1}{2} \sum_k m_k \left( \displaystyle y_k^{\,2} + z_k^{\,2} \right)  \omega_x^{\,2} + \dfrac{1}{2} \sum_k m_k \left( z_k^{\,2} + x_k^{\,2} \right) \omega_y^{\,2} + \dfrac{1}{2} \sum_k m_k \left( x_k^{\,2} + y_k^{\,2} \right) \omega_z^{\,2}  \\ &\quad -  \sum_k m_k x_k y_k \omega_x \omega_y -\sum_k m_k y_k z_k \omega_y \omega_z -\sum_k m_k z_k x_k \omega_z \omega_x
+\end{align*}
+
+Đặt $
+  \displaystyle J_x = \sum_k m_k \left( y_k^{\,2} + z_k^{\,2} \right); \quad
+  \displaystyle J_y = \sum_k m_k \left( z_k^{\,2} + x_k^{\,2} \right); \quad
+  \displaystyle J_z = \sum_k m_k \left( x_k^{\,2} + y_k^{\,2} \right)
+$ \\
+
+Gọi là moment quán tính của vật rắn đối với các trục tọa độ Ox, Oy, Oz \\
+
+Đặt $\displaystyle J_{xy} = -\sum_k m_k x_k y_k$ \,; \quad $J_{zx} = \displaystyle -\sum_k m_k x_k z_k$ \,; \quad $J_{yz} = \displaystyle -\sum_k m_k y_k z_k$ \\
+
+Gọi là các tích quán tính \\
+
+khi đó động năng quay của vật rắn được viết lại bởi công thức 
+\begin{equation*}
+\boxed{T_q = \dfrac{1}{2} \sum_{\alpha, \beta =1}^3 J_{\alpha \beta }\, \omega_\alpha \, \omega_\beta} \quad \begin{cases} 
+\alpha ,\beta = 1 \rightarrow x \\
+\alpha ,\beta = 2 \rightarrow y \\
+\alpha ,\beta = 3 \rightarrow z \\
+\end{cases}
+\end{equation*}
+
+Với 
+\begin{equation}
+\boxed{J_{\alpha \beta} = \sum_k m_k \left(r_k^{\,2} \delta_{\alpha \beta} - x_{k\alpha}\, x_{k\beta}\right)}
+\end{equation}
+
+\newpage 
+
+Trong trường hợp các trục Ox, Oy, Oz là các trục đối xứng chính của vật, ta có thể chứng minh 
+được khi đó các tích quán tính $J_{xy} = J_{zx} = J_{yz} = 0$ và động năng quay 
+$$T_q = \dfrac{1}{2} \left(J_x \,\omega_x^{\,2} + J_y \,\omega_y^{\,2} + J_z \,\omega_z^{\,2} \right)$$
+$$J_x = J_{xx}; \quad J_y = J_{yy}; \quad J_z = J_{zz}$$
+$$J_{xy} = J_{zx} = J_{yz} = 0$$
+
+Ta lại có $\, T_q = \dfrac{1}{2} J_\Delta \, \omega^2; \quad \omega^2 = \left(\omega_x^{\,2}+\omega_y^{\,2}+\omega_z^{\,2}\right)$  \\
+
+Tìm $ \, J_\Delta = ? $ theo $J_x, J_y, J_z$ \\
+
+Ta có $\, J_\Delta = n_x^{\,2}\, J_x + n_y^{\,2} J_y + n_z^{\,2} J_z$ \\
+
+$\vec{n}\left( n_x, n_y, n_z \right)$ là $\cos$ chỉ phương của $\, \vec{n} \equiv J_{\Delta _c}= \dfrac{\vec{\omega}}{\vec{\omega}}$ \\
+
+\textit{Chú ý}: trục quay $\Delta \text{ // } \Delta_c$ thì $J_\Delta = J_{\Delta _c} + md^{\,2}$ trong đó $d$ là khoảng 
+cách giữa 2 trục $\Delta$ và $\Delta_c$ 
+
+\newpage 
+
+\setcounter{equation}{0}
+{\centering \section*{ MOMENT XUNG LƯỢNG CỦA VẬT RẮN} \par}
+
+
+\begin{multicols}{2}
+  \begin{align}
+\vec{R}_k &= \vec{R}_o + \vec{r}_k \label{eq:1} \\
+\vec{ V}_k &= \vec{V}_o + \big[ \vec{\omega} \times \vec{r}_k  \big] \label{eq:2} 
+  \end{align}
+\columnbreak
+
+
+
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Straight Lines [id:da6133809372817808] 
+\draw    (205.1,156.56) -- (204.58,37.35) ;
+\draw [shift={(204.57,34.35)}, rotate = 89.75] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da06622499123839642] 
+\draw    (205.1,156.56) -- (363.1,155.62) ;
+\draw [shift={(366.1,155.61)}, rotate = 179.66] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da18842936070629468] 
+\draw    (204.57,156.76) -- (129.91,205.56) ;
+\draw [shift={(127.4,207.2)}, rotate = 326.83] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Shape: Free Drawing [id:dp5879970473905572] 
+\draw  [line width=0.75] [line join = round][line cap = round] (279.57,78.17) .. controls (269.2,58.68) and (284.99,39.7) .. (296.63,27.57) .. controls (319.7,3.55) and (393.3,-0.52) .. (396.07,49.57) .. controls (396.44,56.18) and (399.38,65.5) .. (394.61,69.37) .. controls (371.49,88.16) and (349.88,98.44) .. (321.01,100.17) .. controls (311.92,100.72) and (302.74,101.43) .. (293.71,100.17) .. controls (283.06,98.7) and (284.26,76.27) .. (276.16,73.22) ;
+%Straight Lines [id:da1766591188458786] 
+\draw    (331.75,66.35) -- (319.52,135.52) ;
+\draw [shift={(319,138.48)}, rotate = 280.02] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da8641582528100489] 
+\draw    (331.75,66.35) -- (417.75,35.46) ;
+\draw [shift={(420.57,34.44)}, rotate = 160.24] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da7512078495171508] 
+\draw    (331.75,66.35) -- (276.24,-0.28) ;
+\draw [shift={(274.32,-2.59)}, rotate = 50.21] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da43770962670036195] 
+\draw    (204.57,156.76) -- (327.11,30.58) ;
+\draw [shift={(329.2,28.43)}, rotate = 134.16] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da7995237461785337] 
+\draw    (331.32,66.5) -- (330.44,31.43) ;
+\draw [shift={(330.36,28.43)}, rotate = 88.55] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da3791532197685433] 
+\draw    (204.57,156.76) -- (328.88,68.24) ;
+\draw [shift={(331.32,66.5)}, rotate = 144.55] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+
+% Text Node
+\draw (187.87,145.01) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle O_{1}$
+\end{minipage}};
+% Text Node
+\draw (144.16,216.7) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle X$
+\end{minipage}};
+% Text Node
+\draw (376.83,164.54) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle Y$
+\end{minipage}};
+% Text Node
+\draw (194.02,28.3) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle Z$
+\end{minipage}};
+% Text Node
+\draw (344.59,75.62) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle O$
+\end{minipage}};
+% Text Node
+\draw (331.79,138.12) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle x$
+\end{minipage}};
+% Text Node
+\draw (429.02,49.48) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle y$
+\end{minipage}};
+% Text Node
+\draw (291.02,-8.98) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle z$
+\end{minipage}};
+% Text Node
+\draw (242.88,80.91) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle \vec{R}_{k}$
+\end{minipage}};
+% Text Node
+\draw (280.77,121.17) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle \vec{R}_{o}$
+\end{minipage}};
+% Text Node
+\draw (344.26,45.6) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle \vec{r}_{k}$
+\end{minipage}};
+% Text Node
+\draw (338.25,20.42) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle M_{k}$
+\end{minipage}};
+
+
+\end{tikzpicture}
+\end{multicols}
+
+Moment xung lượng của vật rắn đối với $O_1 (O_1XYZ)$ 
+
+\begin{equation}
+\vec{L}_{O_1} = \sum_{k} \left[ \vec{R}_{k} \times m_{k} \vec{V}_{k} \right] 
+\label{eq:3}
+\end{equation}
+
+Thay \eqref{eq:1}, \eqref{eq:2} vào \eqref{eq:3} ta được 
+\begin{align}
+\vec{L}_{O_1} &= \sum_{k} \left[ \left( \vec{R}_o + \vec{r}_k \right) \times m_k \left( \vec{V}_o + \big[ \vec{\omega} \times \vec{r}_k  \big]  \right) \right]  \nonumber \\
+&= \sum_k \left[\vec{R}_o \times m_k \vec{V}_o\right] + \sum_k \left[\vec{R}_o \times m_k \big[ \vec{\omega} \times \vec{r}_k  \big]  \right]  + \sum_k \left[\vec{r}_k \times m_k \vec{V}_o\right] \nonumber \\ & \quad + \sum_k \Big[\vec{r}_k \times m_k \big[ \vec{\omega} \times \vec{r}_k  \big]  \Big] \nonumber \\
+&= \Big[ \vec{R}_o \times \sum_k m_k \vec{V}_o \Big] + \Big[\vec{R}_o \times \big[\vec{\omega} \times \sum_k m_k \, \vec{r}_k  \big] \Big]  + \Big[ \sum_k m_k \, \vec{r}_k \times \vec{V}_o  \Big] \\ & \quad + \sum_k m_k \Big[ \vec{r}_k \times \big[ \vec{\omega} \times \vec{r}_k \big] \Big] \nonumber
+\end{align}
+
+Chọn $O \equiv C$ của vật rắn 
+$$\vec{r}_c = \dfrac{\sum_{k} m_k \, \vec{r}_k}{\sum_{k} m_k} = \vec{0} \Rightarrow \sum_k m_k \, \vec{r}_k = \vec{0} \, ;\quad \sum_k m_k = m \text{ khối lượng của vật rắn}$$
+
+$$\Rightarrow \vec{L}_{O_1} = \Big[ \vec{R}_c \times m \, \vec{V}_c \Big] + \sum_k m_k \Big[ \vec{r}_k \times [ \vec{\omega} \times \vec{r}_k]  \Big]$$
+
+$\vec{L} = \Big[ \vec{R}_c \times m \, \vec{V}_c \Big] $: moment động lượng của chất điểm m (khối lượng vật rắn) đặt tại C đối với $O_1$ \\ 
+
+$\vec{L}_c =\displaystyle  \sum_k m_k \Big[ \vec{r}_k \times [ \vec{\omega} \times \vec{r}_k]  \Big]$: moment xung lượng của vật rắn đối với khối tâm C \\
+\newpage 
+
+$$\vec{L}_O = \sum_k m_k \, \Big[\vec{r}_{kx} \times \big[ \vec{\omega} \times \vec{r}_k \big]    \Big]$$
+ 
+
+
+\begin{align*}
+\big[ \vec{\omega} \times \vec{r}_k \big] &= \begin{vmatrix}
+\vec{i} & \vec{j} & \vec{k} \\
+\omega_x & \omega_y & \omega_z \\
+r_{k} & r_{k} & r_{k}
+\end{vmatrix} 
+= \big( \omega_y r_{k} - \omega_z r_{k} \big) \vec{i} + \big( \omega_z r_{k} - \omega_x r_{k} \big) \vec{j} + \big( \omega_x r_{k} - \omega_y r_{k} \big) \vec{k} \\[10pt]
+\Big[\vec{r}_k \times \big[\vec{\omega} \times \vec{r}_k  \big]\Big] &= \begin{vmatrix}
+\vec{i} & \vec{j} & \vec{k} \\[7pt]
+x_{k} & y_{k} & z_{k} \\[7pt]
+\big( \omega_y r_{k} - \omega_z r_{k} \big) & \big( \omega_z r_{k} - \omega_x r_{k} \big) & \big( \omega_x r_{k} - \omega_y r_{k} \big)
+\end{vmatrix} \\[10pt]
+&= \quad \Big[ \big( y_k^{\,2} + z_k^{\,2} \big) \omega_x  - x_k \, y_k \, \omega_y - x_k \, z_k \, \omega_z \Big]\, \vec{i} 
+\\ &\quad + \Big[ \big( z_k^{\,2} + x_k^{\,2} \big) \omega_y  - y_k \, z_k \, \omega_z - y_k \, x_k \, \omega_x \Big]\, \vec{j} \\ &\quad + \Big[ \big( x_k^{\,2} + y_k^{\,2} \big) \omega_z  - z_k \, x_k \, \omega_x - z_k \, y_k \, \omega_y \Big]\, \vec{k}  
+\end{align*}
+\begin{align*}
+\vec{L}_O &= \Big( J_{xx} \, \omega_x + J_{xy} \, \omega_y + J_{xz} \, \omega_z \Big) \, \vec{i}  + \Big( J_{yx} \, \omega_x + J_{yy} \, \omega_y + J_{yz} \, \omega_z \Big) \, \vec{j} 
++ \Big( J_{zx} \, \omega_x + J_{zy} \, \omega_y + J_{zz} \, \omega_z \Big) \, \vec{k} 
+\end{align*}
+Vậy $\vec{L}_O (L_x, L_y, L_z) = \vec{L}_\alpha \,; \alpha =1 \rightarrow x, 2 \rightarrow y, 3 \rightarrow z$
+
+$$\boxed{L_\alpha = \sum_{\beta=1}^3 J_{\alpha\beta} \, \omega_\beta}$$
+
+
+Nếu vật rắn quay quanh một trục $\Delta$ đi qua C thì \\
+
+$\vec{\omega}\,(0,0,\omega); \vec{L}_O = (L_x, L_y, L_z); J_{xy} = J_{yz} = J_{zx} = 0$ \\
+
+$\vec{L}_O = L_z \, \vec{k} = J_z \, \omega \, \vec{k} = J_z \, \vec{\omega} \,; \, \vec{n} = (0,0,1) $ 
+$$J_\Delta = n_x^{\,2} + n_y^{\,2} + n_z^{\,2} = J_z \Rightarrow \boxed{\vec{L}_O = J_\Delta \, \vec{\omega}}$$
+
+\newpage 
+\setcounter{equation}{0}
+{\centering \section*{ CÁC PHƯƠNG TRÌNH CHUYỂN ĐỘNG CỦA VẬT RẮN} \par}
+\vspace{0.5cm}
+Chuyển động tự do của vật rắn được phân tích thành hai chuyển động: chuyển động tịnh tiến cùng khối tâm C và chuyển động quay xung quanh 
+một vị trí đi qua khối tâm C.\\
+
+Số bậc tự do $s=6$ và 6 tọa độ suy rộng $\vec{R}_c (x_c, y_c, z_c)$ và $\vec{\alpha}\,(\varphi, \Psi, \theta)$ \\
+
+Phương trình Lagrange loại 2 
+\begin{align}
+\dfrac{\text{d}}{\text{dt}} \left(\dfrac{\partial T}{\partial \vec{V}_c} \right) -\dfrac{\partial T}{\partial \vec{R}_c} &= Q_{\vec{R}_c} \label{eq:1} \\[10pt]
+\dfrac{\text{d}}{\text{dt}} \left(\dfrac{\partial T}{\partial \vec{\omega}} \right) -\dfrac{\partial T}{\partial \vec{\alpha}} &= Q_{\vec{\alpha}} \label{eq:2}
+\end{align}
+
+Động năng của vật rắn 
+\begin{equation}
+T = \dfrac{1}{2} m \vec{V}_c^{\,2} + \dfrac{1}{2} \sum_{\alpha , \beta = 1 }^{3} J_{\alpha \beta} \, \omega_\alpha \, \omega_\beta  
+\label{eq:3}
+\end{equation}
+
+Công nguyên tố 
+\begin{align} 
+\delta A &= \sum_k \vec{F}_k \, \delta \vec{R}_k = \sum_k \vec{F}_k  \left( \delta \vec{R}_c + \delta \vec{r}_k \right) \label{eq:4} \\ 
+&= \sum_k \vec{F}_k \, \delta \vec{R}_c + \sum_k \vec{F}_k \, \delta \vec{r}_k \nonumber
+\end{align}
+
+\begin{multicols}{2}
+  Theo hình vẽ ta có \\
+  
+  $\hspace{0.5cm} \delta \vec{r}_k = \big[\delta \vec{\alpha} \times \vec{r}_k   \big]$
+\begin{align*}
+\delta A &= \sum_k \vec{F}_k \, \delta \vec{R}_c + \sum_k \vec{F}_k \, \big[ \delta \vec{\alpha} \times \vec{r}_k  \big]  \\
+&= \sum_k \vec{F}_k \, \delta \vec{R}_c + \sum_k \big[\vec{r}_k \times \vec{F}_k \big] \delta \vec{\alpha} \\
+&= Q_{\vec{R}_c} + Q_{\vec{\alpha}}
+\end{align*}
+\columnbreak
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Straight Lines [id:da8431383918266827] 
+\draw    (377.56,278.17) -- (377.05,88.09) -- (376.92,40.2) ;
+\draw [shift={(376.91,37.2)}, rotate = 89.85] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Shape: Ellipse [id:dp2058551266667027] 
+\draw  [line width=0.75]  (293.54,104.68) .. controls (293.54,91.23) and (331.16,80.32) .. (377.56,80.32) .. controls (423.96,80.32) and (461.57,91.23) .. (461.57,104.68) .. controls (461.57,118.14) and (423.96,129.05) .. (377.56,129.05) .. controls (331.16,129.05) and (293.54,118.14) .. (293.54,104.68) -- cycle ;
+%Straight Lines [id:da2036026527534679] 
+\draw    (377.56,206.99) -- (410.59,128.99) ;
+\draw [shift={(411.76,126.23)}, rotate = 112.95] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da7397441556431188] 
+\draw    (377.56,206.99) -- (455.08,117.77) ;
+\draw [shift={(457.05,115.5)}, rotate = 130.99] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da5107199042747852] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (377.56,104.68) -- (416.25,127.65) ;
+%Straight Lines [id:da6377356114062878] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (377.56,104.68) -- (456.33,114.83) ;
+%Curve Lines [id:da0891526002352131] 
+\draw    (365.8,62.19) .. controls (373.57,69.06) and (381.29,68.64) .. (388.7,62.55) ;
+\draw [shift={(390.88,60.57)}, rotate = 135.52] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (5.36,-2.57) -- (0,0) -- (5.36,2.57) -- cycle    ;
+%Shape: Free Drawing [id:dp8581960639284467] 
+\draw  [line width=0.75] [line join = round][line cap = round] (412.42,72.6) .. controls (412.42,63.04) and (384.38,74.29) .. (378.29,76.62) .. controls (346.21,88.91) and (344.5,114.8) .. (330.37,143.66) .. controls (328.03,148.44) and (328.8,156.23) .. (327.75,161.09) .. controls (325.48,171.51) and (317.22,198.09) .. (327.09,210.7) .. controls (339.31,226.31) and (371.67,233.49) .. (390.1,236.18) .. controls (402.43,237.97) and (468.55,241.29) .. (489.87,225.45) .. controls (500.81,217.32) and (504.24,212.1) .. (513.5,204) .. controls (515.06,202.62) and (518.13,202.65) .. (518.75,200.64) .. controls (519.74,197.42) and (519.22,193.86) .. (520.06,190.59) .. controls (521.9,183.37) and (527.86,146.39) .. (526.62,136.29) .. controls (524.29,117.21) and (491.37,98.23) .. (474.77,90.7) .. controls (470.92,88.95) and (463.35,83.61) .. (461.64,83.32) .. controls (450.15,81.37) and (423.89,79.69) .. (414.39,71.93) ;
+%Curve Lines [id:da17276398282350203] 
+\draw    (432.11,122.88) .. controls (476.07,149.29) and (499.66,123.67) .. (522.93,97.91) ;
+\draw [shift={(524,96.73)}, rotate = 132.11] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-3.29) .. controls (6.95,-1.4) and (3.31,-0.3) .. (0,0) .. controls (3.31,0.3) and (6.95,1.4) .. (10.93,3.29)   ;
+%Shape: Arc [id:dp615931136119464] 
+\draw  [draw opacity=0] (403.5,107.41) .. controls (405.16,109.67) and (405.81,111.8) .. (405.21,113.6) .. controls (404.49,115.74) and (402.08,117.13) .. (398.51,117.76) -- (373.96,102.61) -- cycle ; \draw   (403.5,107.41) .. controls (405.16,109.67) and (405.81,111.8) .. (405.21,113.6) .. controls (404.49,115.74) and (402.08,117.13) .. (398.51,117.76) ;  
+
+% Text Node
+\draw (465.93,173.91) node  [font=\normalsize] [align=left] {\begin{minipage}[lt]{68.51pt}\setlength\topsep{0pt}
+$\displaystyle \vec{r}_{k}( t+dt)$
+\end{minipage}};
+% Text Node
+\draw (358.34,200.14) node  [font=\normalsize] [align=left] {\begin{minipage}[lt]{8.81pt}\setlength\topsep{0pt}
+$\displaystyle C$
+\end{minipage}};
+% Text Node
+\draw (412.16,93.39) node  [font=\normalsize] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle \delta \vec{\alpha }$
+\end{minipage}};
+% Text Node
+\draw (532.12,79.95) node  [font=\normalsize] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle \delta \vec{r}_{k}$
+\end{minipage}};
+% Text Node
+\draw (353.56,45.49) node   [align=left] {\begin{minipage}[lt]{13.22pt}\setlength\topsep{0pt}
+$\displaystyle \vec{\omega }$
+\end{minipage}};
+% Text Node
+\draw (387.28,145.71) node  [font=\normalsize] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle \vec{r}_{k}$
+\end{minipage}};
+
+
+\end{tikzpicture}
+\end{multicols}
+
+Ta có 
+\begin{align}
+Q_{\vec{R}_c} &= \sum_k \vec{F}_k = \sum_k \left(\vec{F}_k^{\, i} + \vec{F}_k^{\, e} \right) = \sum_k \vec{F}_k^{\, e} = \vec{F}^{\,e}  \notag \\[10pt]
+Q_{\vec{\alpha}} &= \sum_k \big[\vec{r}_k \times \vec{F}_k  \big] = \sum_k \left[\vec{r}_k \times \left(\vec{F}_k^{\, i} + \vec{F}_k^{\, e}  \right)  \right] = \sum_k \left[\vec{r}_k \times \vec{F}_k^{\, e}  \right] = \vec{M}^{\,e} 
+\label{eq:5}
+\end{align}
+\newpage 
+
+Thay \eqref{eq:3}, \eqref{eq:4} và \eqref{eq:5} vào \eqref{eq:1}, \eqref{eq:2} ta được \\
+$$T = \dfrac{1}{2} m \vec{V}_c^{\,2} + \dfrac{1}{2} \sum_{\alpha, \beta = 1}^3 J_{\alpha \beta} \, \omega_\alpha \, \omega_\beta$$
+$$Q_{\vec{R}_c} = \vec{F}^{\,e} \, ; \hspace{0.5cm} Q_{\vec{\alpha}} = \vec{M}^{\,e}$$ \\[10pt]
+
+$\eqref{eq:1} \rightarrow \dfrac{\text{d}}{\text{dt}} \left(\dfrac{\partial T}{\partial \vec{V}_c} \right) - \dfrac{\partial T}{\partial \vec{R}_c} = Q_{\vec{R}_c} \Rightarrow \boxed{m \dfrac{\text{d} \vec{V}_c}{\text{dt}} = \vec{F}^{\,e}} \hspace{0.25cm}$ 
+phương trình chuyển động khối tâm C \\[10pt]
+
+$\eqref{eq:2} \rightarrow \dfrac{\text{d}}{\text{dt}} \left( \dfrac{\partial T}{\partial \vec{\omega}} \right) - \dfrac{\partial T}{\partial \vec{\alpha}} = Q_{\vec{\alpha}} \Rightarrow \dfrac{\partial T}{\partial \omega_\delta} = \dfrac{1}{2} \displaystyle \sum_{\alpha,\beta =1}^3 J_{\alpha \beta} \, \dfrac{\partial \left(\omega_\alpha \, \omega_\beta \right)}{\partial \omega_\delta } = \dfrac{1}{2} \displaystyle \sum_{\alpha,\beta =1}^3 J_{\alpha \beta} \big( \delta_{\alpha \delta}\, \omega_\beta +  \delta_{\beta \delta}  \, \omega_\alpha  \big)$ \\[7pt]
+
+$ \hspace{0.5cm} = \dfrac{1}{2} \left( \displaystyle \sum_{\beta =1}^3 J_{\delta \beta} \, \omega_\beta + \sum_{\alpha =1}^3 J_{\alpha \delta} \, \omega_\alpha  \right) = \displaystyle \sum_{\alpha =1}^3 J_{\delta \alpha } \, \omega_\alpha = L_\delta = \dfrac{\partial T}{\vec{\omega}} = \vec{L}_c  \Rightarrow \boxed{\displaystyle \dfrac{\text{d}}{\text{dt}} \vec{L}_c = \vec{M}^{\,e}}$ \\[10pt]
+
+Phương trình chuyển động quay xung quanh 1 trục $\Delta$ đi qua C
+\newpage 
+\setcounter{equation}{0}
+{\centering \section*{CHUYỂN ĐỘNG CỦA VẬT RẮN QUANH MỘT ĐIỂM CỐ ĐỊNH. 
+PHƯƠNG TRÌNH ĐỘNG LỰC HỌC EULER} \par}
+\vspace{0.5cm}
+Số bậc tự do $s = 3$ (các góc quay $\varphi, \Psi, \theta$). Khi đó vật rắn không chuyển động 
+tự do mà chuyển động quay xung quanh 1 trục đi qua O .
+
+$$m \, \dfrac{\text{d}}{\text{dt}} \vec{V}_c = \vec{F}^{\,e} = \vec{F} + \vec{R} \,; \vec{R} \text{ là phản lực của trục quay} $$
+
+$$\vec{V}_c = \big[ \vec{\omega} \times \vec{R}_c  \big] \,; \hspace{0.5cm} \frac{\text{d}}{\text{dt}} \vec{L}_o = \vec{M}^{\,e}$$
+
+Ta có 
+\begin{align*} 
+\dfrac{\text{d}}{\text{dt}} \vec{L}_o &= \dfrac{\text{d}}{\text{dt}} \big( L_x \vec{i} + L_y \vec{j} + L_z \vec{k}  \big) \\[7pt]
+&= \dfrac{\text{d} L_x}{\text{dt}} \vec{i} + \dfrac{\text{d} L_y}{\text{dt}} \vec{j} + \dfrac{\text{d} L_z}{\text{dt}} \vec{k} + L_x \dfrac{\text{d}\vec{i}}{\text{dt}} + L_y \dfrac{\text{d}\vec{j}}{\text{dt}} + L_z \dfrac{\text{d}\vec{k}}{\text{dt}} \\[7pt]
+&= \dfrac{\text{d}L_x}{\text{dt}} \vec{i} + \dfrac{\text{d}L_y}{\text{dt}} \vec{j} + \dfrac{\text{d}L_z}{\text{dt}} \vec{k} + L_x \big[ \vec{\omega} \times \vec{i}  \big] + L_y \big[ \vec{\omega} \times \vec{j}  \big] + L_z \big[ \vec{\omega} \times \vec{k}  \big] \\[7pt]
+&= \dfrac{\text{d}L_x}{\text{dt}} \vec{i} + \dfrac{\text{d}L_y}{\text{dt}} \vec{j} + \dfrac{\text{d}L_z}{\text{dt}} \vec{k} + \left[\vec{\omega} \times \vec{L}  \right] =\vec{M}^{\,e} 
+\end{align*} 
+
+Hay  \hspace{0.5cm}
+$ \begin{cases}
+\dfrac{\text{d}}{\text{dt}} L_x + \omega_y L_z - \omega_z L_y = M_x^{\,e} \\[10pt]
+\dfrac{\text{d}}{\text{dt}} L_y + \omega_z L_x - \omega_x L_z = M_y^{\,e} \\[10pt]
+\dfrac{\text{d}}{\text{dt}} L_z + \omega_x L_y - \omega_y L_x = M_z^{\,e}
+\end{cases}
+$ \\[10pt]
+
+Nếu Ox, Oy, Oz là các trục quán tính chính, ta có $ L_\alpha = J_\alpha \, \omega_\alpha$ \\
+ \begin{equation}
+\begin{cases}
+\dfrac{\text{d}}{\text{dt}} L_x + \big( J_z - J_y\big) \omega_y \, \omega_z = M_x^{\,e} \\[10pt]
+\dfrac{\text{d}}{\text{dt}} L_y + \big( J_x - J_z\big) \omega_z \, \omega_x = M_y^{\,e} \\[10pt]
+\dfrac{\text{d}}{\text{dt}} L_z + \big( J_y - J_x\big) \omega_x \, \omega_y = M_z^{\,e}
+\end{cases}
+\label{eq:1}
+\end{equation} \\[5pt]
+
+Ta có (trang 24)\\
+\begin{equation}\begin{cases} 
+   \omega_x &= \dot{\varphi} \sin \theta \sin \Psi + \dot{\theta} \cos \Psi \\
+   \omega_y &= \dot{\varphi} \sin \theta \cos \Psi - \dot{\theta} \sin \Psi \\
+   \omega_z &= \dot{\varphi} \cos \theta + \dot{\Psi}
+   \label{eq:2}
+\end{cases} 
+\end{equation}
+
+\newpage 
+Thay $\omega_x , \omega_y , \omega_z$  từ \eqref{eq:2} vào \eqref{eq:1} ta được phương trình động lực học Euler.
+
+$$
+\begin{cases}
+\dfrac{\text{d}}{\text{dt}} L_x + \big( J_z - J_y\big) \big( \dot{\varphi} \sin \theta \cos \Psi - \dot{\theta} \sin \Psi \big) \big(\dot{\varphi} \cos \theta + \dot{\Psi} \big) = M_x^{\,e} \\[10pt]
+\dfrac{\text{d}}{\text{dt}} L_y + \big( J_x - J_z\big) \big( \dot{\varphi} \cos \theta + \dot{\Psi} \big) \big( \dot{\varphi} \sin \theta \sin \Psi + \dot{\theta} \cos \Psi \big) = M_y^{\,e} \\[10pt]
+\dfrac{\text{d}}{\text{dt}} L_z + \big( J_y - J_x\big) \big(\dot{\varphi} \sin \theta \sin \Psi + \dot{\theta} \cos \Psi  \big) \big(\dot{\varphi} \sin \theta \cos \Psi - \dot{\theta} \sin \Psi\big) = M_z^{\,e}
+
+\end{cases}
+$$
+
+
+
+
+\newpage 
+{\centering \section*{NGUYÊN LÝ TƯƠNG ĐỐI ANHXTANH}\par}
+
+Tiên đề 1: Mọi định luật vật lí diễn ra như nhau trong mọi hqc quán tính. \\
+
+Tiên đề 2: Vận tốc truyền tương tác là hữu hạn bằng $c = 3.10^{8} \, m/s$ và không phụ thuộc vào 
+hqc quán tính.\\
+
+\textit{Chú ý}: Một hiện tượng vật lí xảy ra tại 1 vị trí nào đó trong không gian và vào 1 thời điểm nào đó 
+nên ta biểu diễn bằng một vectơ tọa độ \\
+
+$\,x^\mu (x^0, x^1, x^2, x^3) = x^\mu (c.t, x,y,z) = x^\mu (c.t , \vec{r})$  $ \quad x^{\mu}$ vectơ tọa độ 4 chiều phản biến \\ 
+ 
+$x_\mu (x_0, x_1, x_2 , x_3) = x_{\mu}(c.t , - x, -y, -z) = x_{\mu}(c.t, -\vec{r}) $ \quad $x_\mu$ vectơ tọa độ 4  chiều hiệp biến \\ 
+
+$x_\mu . x^\mu = x^\mu . x_\mu = x^2 = c^2.t^2 - x^2 -y^2 - z^2 = c^2.t^2 - \vec{r}^{\,2}$ \\
+
+$x^\mu = g^{\mu \nu } \, x_\nu$ hoặc $x_\mu = g_{\mu \nu } \, x^{\nu} $ 
+
+\begin{equation*}
+g^{\mu \nu} = \begin{pmatrix}    
+ g^{00} & g^{01} & g^{02} & g^{03} \\ 
+ g^{10} &  g^{11} & g^{12} & g^{13} \\
+ g^{20} & g^{21} & g^{22} & g^{23} \\ 
+ g^{30} &  g^{31} & g^{32} & g^{33} 
+\end{pmatrix} = \begin{pmatrix}
+1 &  0 & 0 & 0\\
+0 & -1 & 0 & 0 \\
+0 & 0 & -1 & 0 \\ 
+0 & 0 & 0 & -1
+\end{pmatrix}  = g_{\mu \nu} 
+\end{equation*}
+
+$g^{\mu \nu} \,$ là tenxơ bậc 2, 4 chiều, đối xứng  \\
+
+Vectơ 4 chiều $A^\mu$ phản biến ($A_\mu\,$hiệp biến)
+\begin{align*}
+A^\mu (A^0 , A^1 ,A^2 ,A^3) &= A^{\mu} (A^0, \vec{A}) = A^{\mu} (A^0, A_x, A_y, A_z ) \\
+A_\mu (A_0, A_1, A_2, A_3) &= (A_0 , -\vec{A}) = (A_0 , -A_x, -A_y, -A_z)
+\end{align*}
+
+$A^0=A_0$ 
+\begin{align*}
+\big( A\,B \big) &= A^\mu \, B_\mu = A_\mu \, B^\mu = A_0 B_0 + A_1 B^1 + A_2 B^2 + A_3 B^3  \\
+&= A_0B_0 - A_xB_x -A_yB_y - A_zB_z \\
+&= A_0B_0 - \big( \vec{A} . \vec{B} \big)
+\end{align*}
+ 
+$\nabla = \dfrac{\partial }{\partial x} \vec{i} + \dfrac{\partial }{\partial y} \vec{j} + \dfrac{\partial }{\partial z} \vec{k}\,;$ \quad $\Delta = \nabla^2 = \dfrac{\partial ^2}{\partial x^2}+ \dfrac{\partial ^2}{\partial y^2}+ \dfrac{\partial ^2}{\partial z^2}$ \\[7pt]
+
+$\partial _\mu = \dfrac{\partial }{\partial x^\mu} = \left( \dfrac{1}{c} \cdot \dfrac{\partial }{\partial t} \, , \dfrac{\partial }{\partial x}\, , \dfrac{\partial }{\partial y}\, , \dfrac{\partial }{\partial z} \right)$ \\[7pt]
+
+$\partial ^\mu = \dfrac{\partial }{\partial _\mu} = \left(\dfrac{1}{c} \cdot \dfrac{\partial }{\partial t}\, ,\dfrac{-\partial }{\partial x}\,, \dfrac{-\partial }{\partial y}\,, \dfrac{-\partial }{\partial z} \right)$ \\[7pt] 
+
+$\Box = \partial^\mu . \partial _\mu = \partial_\mu . \partial ^\mu = \dfrac{1}{c^2} \cdot \dfrac{\partial ^2}{\partial t^2} - \dfrac{\partial ^2}{\partial x^2}+ \dfrac{\partial ^2}{\partial y}+ \dfrac{\partial ^2}{\partial z^2} = \dfrac{1}{\partial c^2} \cdot \dfrac{\partial ^2}{\partial t^2} - \Delta $ 
+
+\newpage 
+{\centering \section*{KHOẢNG BIẾN CỐ, PHÉP BIẾN ĐỔI LORENTZ VÀ CÁC HỆ QUẢ CỦA PHÉP BIẾN ĐỔI LORENTZ} \par}
+
+Biến cố: là một hiện tượng vật lí xảy ra tại 1 điểm nào đó trong không gian và vào 1 thời điểm nào đó. 
+$x^\mu (x_\mu) (c.t , x,y,z)$ mô tả biến cố  \\
+
+Khoảng biến cố: xét 2 biến cố \\
+
+Biến cố 1: xảy ra tại vị trí có tọa độ $\, (x_1, y_1, z_1)$ vào thời điểm $t_1$  \\
+
+Biến cố 2: xảy ra tại vị trí có tọa độ $\, (x_2, y_2, z_2)$ vào thời điểm $t_2$ \\
+
+Khoảng biến cố giữa hai biến cố 1 và 2 là 
+$$\sqrt{c^2 (t_2 - t_1)^2 - (x_2-x_1)^2-(y_2-y_1)^2- (z_2-z_1)^2} = \Delta s$$ 
+
+Nếu biến cố 1 và 2 xảy ra rất gần nhau 
+$$\text{d}s = \sqrt{c^2\text{dt}^2 - \text{d}x^2 - \text{d}y^2 -\text{d}z^2}$$
+
+Xét hai hqc \textbf{quán tính} K và K' \\
+
+Biến cố 1  xảy ra tại $(x_1,y_1,z_1,t_1) \rightarrow K,\, (x_1{'} , y_1{'},z_1{'},t_1{'}) \rightarrow K'$ \\
+
+Biến cố 2 xảy ra tại $(x_2, y_2, z_2, t_2) \rightarrow K, \, (x_2{'} , y_2{'} ,z_2{'}, t_2{'}) \rightarrow K'$ \\ 
+
+Khoảng giữa hai biến cố trong hqc quán tính K và K' 
+$$\text{K:\quad } \Delta s = \sqrt{ c^2 (t_2 - t_1)^2 - (x_2-x_1)^2 - (y_2-y_1)^2 -(z_2 - z_1)^2} $$
+
+$$\text{K':\quad } \Delta s' = \sqrt{ c^2 (t_2' - t_1')^2 - (x_2'-x_1')^2 - (y_2'-y_1')^2 -(z_2' - z_1')^2} $$
+
+Người ta chứng minh khoảng biến cố là bất biến $\Delta s = \Delta s'$ \\
+
+Hay \begin{align*}
+  & c^2(t_2 - t_1)^2 - (x_2 - x_1 )^2 - (y_2 - y_1 )^2- (z_2 - z_1)^2 \\[3pt]
+ = \,\, &c^2(t_2' - t_1')^2 - (x_2' - x_1' )^2 - (y_2' - y_1' )^2- (z_2' - z_1')^2
+\end{align*}
+\newpage
+ \subsection*{Phép biến đổi Lorentz } 
+
+\indent Giả sử ở $\,t = 0$ , hqc quán tính $\text{K} \equiv \text{K'}$, sau đó hqc quán tính K' chuyển động với 
+vận tốc $V$, sao cho $\,O'x' \text{ // } Ox\,$ dọc theo trục $Ox$\\
+
+Biến cố 1: $t_0 = t_0' = 0$ xảy ra ở gốc tọa độ K$(0,0,0)$;  K'$(0,0,0)$ \\
+
+Biến cố 2: $t \neq 0 , t' \neq 0$ xảy ra ở K$(x,y,z,t)$; K'$(x',y',z',t')$
+ 
+\begin{figure}[h]
+
+\centering
+
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Straight Lines [id:da9009936124543042] 
+\draw    (168.1,199.86) -- (167.58,80.65) ;
+\draw [shift={(167.57,77.65)}, rotate = 89.75] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da38148493783179216] 
+\draw    (168.1,199.86) -- (296.1,198.93) ;
+\draw [shift={(299.1,198.91)}, rotate = 179.58] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da7642573437940877] 
+\draw    (167.57,200.06) -- (92.91,248.86) ;
+\draw [shift={(90.4,250.51)}, rotate = 326.83] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da647025443241658] 
+\draw    (385.43,199.43) -- (384.91,80.22) ;
+\draw [shift={(384.9,77.22)}, rotate = 89.75] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da9498262991221389] 
+\draw    (385.43,199.43) -- (524.44,198.5) ;
+\draw [shift={(527.44,198.48)}, rotate = 179.62] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da9625265155567415] 
+\draw    (384.9,199.63) -- (310.24,248.43) ;
+\draw [shift={(307.73,250.07)}, rotate = 326.83] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da7273424000120106] 
+\draw    (472.43,158.93) -- (503.44,158.97) ;
+\draw [shift={(506.44,158.98)}, rotate = 180.08] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+
+% Text Node
+\draw (153.87,186.81) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle O$
+\end{minipage}};
+% Text Node
+\draw (94.36,263.1) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle z$
+\end{minipage}};
+% Text Node
+\draw (303.89,208.32) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle x$
+\end{minipage}};
+% Text Node
+\draw (153.22,74.4) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle y$
+\end{minipage}};
+% Text Node
+\draw (368.2,185.38) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle O'$
+\end{minipage}};
+% Text Node
+\draw (313.69,264.67) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle z'$
+\end{minipage}};
+% Text Node
+\draw (524.22,211.89) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle x'$
+\end{minipage}};
+% Text Node
+\draw (370.55,73.96) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle y'$
+\end{minipage}};
+% Text Node
+\draw (232.05,94.46) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+K
+\end{minipage}};
+% Text Node
+\draw (446.05,92.46) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+K'
+\end{minipage}};
+% Text Node
+\draw (488.43,133.25) node  [font=\large] [align=left] {\begin{minipage}[lt]{12.92pt}\setlength\topsep{0pt}
+$\displaystyle \vec{V}$
+\end{minipage}};
+
+
+\end{tikzpicture}
+\end{figure}
+\setcounter{equation}{0}
+Vì khoảng giữa hai biến cố là bất biến, ta có: 
+$$c^2t^2-x^2-y^2-z^2 = c^2t'^{\,2} - x'^{\,2} - y'^{\,2} - z'^{\,2}$$
+
+Vì K' chuyển động dọc theo trục $Ox$: $\, \,y = y'\,; \, z = z' $ \\
+\begin{equation}
+  \Rightarrow \quad c^2t^2 - x^2 = c^2t'^{\,2} - x'^{\,2}
+\label{eq:1}
+\end{equation}
+
+Nhận xét: phương trình \eqref{eq:1} đều là bậc 2 đối với $\,x,t,x',t'\,$ 
+  nên sự phụ thuộc qua $(x,t)$ và $(x',t')$ là sự phụ thuộc tuyến tính \\
+  
+Giả sử 
+\begin{equation}
+\begin{cases}
+x &= ax' + bct' \\
+c.t &= a'x' + b'ct' 
+\end{cases}
+\label{eq:2}
+\end{equation}
+
+Thay \eqref{eq:2} vào \eqref{eq:1} 
+
+$$\Rightarrow \quad (a'x' + b'ct')^2 - (ax' + bct')^2 =c^2t'^{\,2} - x'^{\,2}$$
+\begin{equation}
+(a'^{\,2} -a^2) x'^{\,2} + 2(a'b' -ab)ct' + (b'^{\,2} - b^2)c^2t'^{\,2} = c^2t'^{\,2} - x'^{\,2} 
+\label{eq:3}
+\end{equation}
+
+Đồng nhất hai vế phương trình \eqref{eq:3} với \eqref{eq:1} 
+\begin{equation*}
+\begin{cases}
+a'^{\,2} -a^2 &= -1 \\
+a'b' - ab &= 0 \\
+b'^{\,2} -b^2&=1
+\end{cases} \Rightarrow 
+\begin{cases}
+a^2 - a'^{\,2} &=1 \\ 
+a'b' &= ab  \\
+b'^{\,2} -b^2 &=1
+\end{cases}
+\end{equation*}
+ 
+$$\Rightarrow \begin{cases}
+  a' = b \\
+  b' = a \\
+  a^2-b^2 = 1
+\end{cases} \Rightarrow \begin{cases} 
+  a = \cosh \phi  \\[5pt]
+
+  b = \sinh \phi 
+\end{cases}$$
+
+Kết luận: 
+$$\begin{cases}
+  x = ax' + bct' \\
+a^2 - b^2 = 1\\
+  ct = bx' + act'
+\end{cases}$$
+
+Chọn biến cố 2 $\equiv O'$ $(t \neq 0  \text{ đối với K, } t' \neq 0 \text{ đối với K' }) $ \\ 
+
+$x' = 0 , x = x_0 = V.t$ \\
+
+\eqref{eq:1} $\rightarrow \, c^2t^2 - x^2 = c^2 t'^{\,2} \, \Rightarrow \, c^2t^2 - V^2t^2 = c^2t'^{\,2}  $\\
+
+\eqref{eq:2} $\rightarrow \begin{cases} 
+  V.t = bct'  \\[5pt]
+  ct = act' 
+\end{cases} \Rightarrow \dfrac{b}{a} = \dfrac{V}{c}$  \\[5pt]
+
+Mà $\, a^2 - b^2 = 1 \Rightarrow a^2 - a^2 \dfrac{V^2}{c^2} =1$ \\
+
+$$\rightarrow 
+\begin{cases}
+  a = \dfrac{1}{\sqrt{1- \dfrac{V^2}{c^2}}} \\[12pt]
+  b = \dfrac{V/c}{\sqrt{1- \dfrac{V^2}{c^2}}}
+\end{cases}$$
+
+Vậy 
+$$
+\begin{cases}
+ct &= \dfrac{\dfrac{Vx'}{c}}{\sqrt{1 - \dfrac{V^2}{c^2}}} + \dfrac{ct'}{\sqrt{1-\dfrac{V^2}{c^2}}} \\[30pt]
+x &=  \dfrac{x'}{\sqrt{1- \dfrac{V^2}{c^2}}} + \dfrac{Vt'}{\sqrt{1-\dfrac{V^2}{c^2}}} \\
+y &= y'\\
+z &= z'
+\end{cases} \quad \rightarrow \text{ phép biến đổi Lorentz}
+$$
+ \newpage
+\subsection*{ Định lý cộng vận tốc (hệ quả)} 
+\vspace{0.5cm}
+Ta có 
+\begin{equation}
+\begin{cases}
+ct &= \dfrac{\dfrac{Vx'}{c}}{\sqrt{1 - \dfrac{V^2}{c^2}}} + \dfrac{ct'}{\sqrt{1- \dfrac{V^2}{c^2}}} \\[30pt]
+x &= \dfrac{x'}{\sqrt{1- \dfrac{V^2}{c^2}}} + \dfrac{Vt'}{\sqrt{1- \dfrac{V^2}{c^2}}} \\
+y &=y'\\
+z&=z'
+\end{cases}
+\label{eq:4}
+\end{equation}
+
+Lấy vi phần biểu thức \eqref{eq:4} \\ 
+\begin{align}
+\text{d}t &= \dfrac{\dfrac{V}{c^2}\text{ d}x'}{\sqrt{1 - \dfrac{V^2}{c^2}}} + \dfrac{\text{d}t'}{\sqrt{1- \dfrac{V^2}{c^2}}} \label{eq:5}\\
+\text{d}x &= \dfrac{\text{d}x'}{\sqrt{1- \dfrac{V^2}{c^2}}} + \dfrac{V\text{ d}t'}{\sqrt{1- \dfrac{V^2}{c^2}}} \label{eq:6}\\
+\text{d}y &=\text{d}y'\label{eq:7}\\
+\text{d}z&=\text{d}z'\label{eq:8}
+\end{align}
+
+\begin{align}
+\eqref{eq:5} \rightarrow \quad  \text{d}t &= \dfrac{\text{d}t'}{\sqrt{1-\dfrac{V^2}{c^2}}}\left( \dfrac{V}{c^2}\dfrac{\text{d}x'}{\text{d}t'}+ 1\right) = \dfrac{\text{d}t'}{\sqrt{1-\dfrac{V^2}{c^2}}}\left( \dfrac{V}{c^2} \,V_x'+1 \right) \label{eq:9}\\[10pt]
+\eqref{eq:6} \rightarrow \, \, \dfrac{\text{d}x}{\text{d}t} &= \dfrac{\text{d}t'}{\text{d}t} \dfrac{1}{\sqrt{1- \dfrac{V^2}{c^2}}} \left( \dfrac{\text{d}x'}{\text{d}t'} +V\right) \nonumber \\[10pt]
+\eqref{eq:9} \rightarrow V_x &= \dfrac{V_x'+V}{\dfrac{V}{c^2}\,V_x' +1}   \nonumber \\
+\eqref{eq:7} \rightarrow \dfrac{\text{d}y}{\text{d}t} &= \dfrac{\text{d}t'}{\text{d}t} \, \dfrac{\text{d}y'}{\text{d}t'} = \dfrac{V_y' \, \sqrt{1 - \dfrac{V^2}{c^2}}}{\dfrac{V}{c^2}\, V_x' + 1} \nonumber \\[10pt]
+\eqref{eq:8} \rightarrow \dfrac{\text{d}z}{\text{d}t} &= \dfrac{\text{d}t'}{\text{d}t} \, \dfrac{\text{d}z'}{\text{d}t'} = \dfrac{V_z' \, \sqrt{1 - \dfrac{V^2}{c^2}}}{\dfrac{V}{c^2}\, V_x' + 1} \nonumber 
+\end{align}
+
+\newpage 
+
+Vậy định lý cộng vận tốc \\
+
+$
+\begin{cases}
+\text{d}t &=\dfrac{\text{d}t'}{\sqrt{1-\dfrac{V^2}{c^2}}}\left( \dfrac{V}{c^2} \,V_x'+1 \right)  \\[30pt]
+V_x &= \dfrac{V_x'+V}{\dfrac{V}{c^2}\,V_x' +1} \\[30pt]
+V_y &= \dfrac{V_y' \, \sqrt{1 - \dfrac{V^2}{c^2}}}{\dfrac{V}{c^2}\, V_x' + 1}  \\[30pt]
+V_z &= \dfrac{V_z' \, \sqrt{1 - \dfrac{V^2}{c^2}}}{\dfrac{V}{c^2}\, V_x' + 1}
+\end{cases}
+$ \\[10pt]
+
+\textit{Sinh viên về nhà tự chứng minh định lý cộng gia tốc}
+
+\newpage 
+\subsection*{Sự co chiều dài của vật theo phương chuyển động (hệ quả)} 
+
+Sự co lại theo chiều dài của phương chuyển động\\
+
+\begin{figure}[h]
+\centering 
+
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Straight Lines [id:da9009936124543042] 
+\draw    (168.1,199.86) -- (167.58,80.65) ;
+\draw [shift={(167.57,77.65)}, rotate = 89.75] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da38148493783179216] 
+\draw    (168.1,199.86) -- (296.1,198.93) ;
+\draw [shift={(299.1,198.91)}, rotate = 179.58] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da7642573437940877] 
+\draw    (167.57,200.06) -- (92.91,248.86) ;
+\draw [shift={(90.4,250.51)}, rotate = 326.83] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da647025443241658] 
+\draw    (385.43,199.43) -- (384.91,80.22) ;
+\draw [shift={(384.9,77.22)}, rotate = 89.75] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da9498262991221389] 
+\draw    (385.43,199.43) -- (524.44,198.5) ;
+\draw [shift={(527.44,198.48)}, rotate = 179.62] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da9625265155567415] 
+\draw    (384.9,199.63) -- (310.24,248.43) ;
+\draw [shift={(307.73,250.07)}, rotate = 326.83] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da7273424000120106] 
+\draw    (472.43,158.93) -- (503.44,158.97) ;
+\draw [shift={(506.44,158.98)}, rotate = 180.08] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Shape: Ellipse [id:dp5851894750410108] 
+\draw   (177.26,175.24) .. controls (177.26,172.88) and (179.12,170.97) .. (181.42,170.97) .. controls (183.71,170.97) and (185.57,172.88) .. (185.57,175.24) .. controls (185.57,177.61) and (183.71,179.52) .. (181.42,179.52) .. controls (179.12,179.52) and (177.26,177.61) .. (177.26,175.24) -- cycle ;
+%Straight Lines [id:da23189541997006735] 
+\draw    (181.79,181.69) -- (174.53,187.53) ;
+%Straight Lines [id:da8285793618708412] 
+\draw    (181.28,191.9) -- (181.42,179.52) ;
+%Straight Lines [id:da032045437002358845] 
+\draw    (188.53,187.11) -- (181.79,181.69) ;
+%Straight Lines [id:da7099532290919839] 
+\draw    (181.03,191.9) -- (177.58,197.73) ;
+%Straight Lines [id:da24906768563606607] 
+\draw    (185.48,197.31) -- (181.79,191.9) ;
+%Shape: Ellipse [id:dp7399508355890273] 
+\draw   (397.26,174.58) .. controls (397.26,172.22) and (399.12,170.3) .. (401.42,170.3) .. controls (403.71,170.3) and (405.57,172.22) .. (405.57,174.58) .. controls (405.57,176.94) and (403.71,178.86) .. (401.42,178.86) .. controls (399.12,178.86) and (397.26,176.94) .. (397.26,174.58) -- cycle ;
+%Straight Lines [id:da34645270775182535] 
+\draw    (401.79,181.03) -- (394.53,186.86) ;
+%Straight Lines [id:da9939236769820343] 
+\draw    (401.28,191.23) -- (401.42,178.86) ;
+%Straight Lines [id:da5231759712011749] 
+\draw    (408.53,186.44) -- (401.79,181.03) ;
+%Straight Lines [id:da008098778107377469] 
+\draw    (401.03,191.23) -- (397.58,197.07) ;
+%Straight Lines [id:da6453192396147148] 
+\draw    (405.48,196.65) -- (401.79,191.23) ;
+%Straight Lines [id:da23754809063827975] 
+\draw    (409.8,161.93) -- (408.53,168.03) ;
+%Straight Lines [id:da5943535475354873] 
+\draw    (435.6,193.9) -- (435.27,204.23) ;
+%Straight Lines [id:da5025860178025369] 
+\draw    (489.6,193.9) -- (489.27,204.23) ;
+
+% Text Node
+\draw (153.87,186.81) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle O$
+\end{minipage}};
+% Text Node
+\draw (94.36,263.1) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle z$
+\end{minipage}};
+% Text Node
+\draw (303.89,208.32) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle x$
+\end{minipage}};
+% Text Node
+\draw (153.22,74.4) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle y$
+\end{minipage}};
+% Text Node
+\draw (368.2,185.38) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle O'$
+\end{minipage}};
+% Text Node
+\draw (313.69,264.67) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle z'$
+\end{minipage}};
+% Text Node
+\draw (524.22,211.89) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle x'$
+\end{minipage}};
+% Text Node
+\draw (370.55,73.96) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle y'$
+\end{minipage}};
+% Text Node
+\draw (232.05,94.46) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+K
+\end{minipage}};
+% Text Node
+\draw (446.05,92.46) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+K'
+\end{minipage}};
+% Text Node
+\draw (488.43,133.25) node  [font=\large] [align=left] {\begin{minipage}[lt]{12.92pt}\setlength\topsep{0pt}
+$\displaystyle \vec{V}$
+\end{minipage}};
+% Text Node
+\draw (434.9,215.4) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle A$
+\end{minipage}};
+% Text Node
+\draw (488.9,215.73) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle B$
+\end{minipage}};
+
+
+\end{tikzpicture}
+\end{figure}
+
+K': $AB $ đứng yên, đo chiều dài $l_0 = x_b' - x_a'$ \\
+
+K: $AB$ chuyển động với vận tốc $V; \text{ đo chiều dài } l = x_b-x_a$  \\
+
+$$\begin{cases}
+  x_b'&= \dfrac{x_b}{\sqrt{1 - \dfrac{V^2}{c^2}}} - \dfrac{Vt}{\sqrt{1 - \dfrac{V^2}{c^2}}} \\[30pt] 
+x_a' &= \dfrac{x_a}{\sqrt{1 - \dfrac{V^2}{c^2}}} - \dfrac{Vt}{\sqrt{1 - \dfrac{V^2}{c^2}}} 
+\end{cases} \quad \Rightarrow x_b' - x_a' = \dfrac{x_b-x_a}{\sqrt{1 - \dfrac{V^2}{c^2}}}$$ 
+
+Hay $$l_0 = \dfrac{l}{\sqrt{1- \dfrac{V^2}{c^2}}} \Rightarrow l = l_0 \, \sqrt{1 - \dfrac{V^2}{c^2}} < l_0$$ \\
+
+Kết luận: đã có sự co chiều dài theo phương chuyển động
+\newpage 
+\subsection*{Sự chậm lại của đồng hồ (hệ quả)} 
+
+\begin{figure}[h]
+\centering
+
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+%Straight Lines [id:da3682998545765981] 
+\draw    (188.1,180.99) -- (187.58,61.78) ;
+\draw [shift={(187.57,58.78)}, rotate = 89.75] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da5502443950034828] 
+\draw    (188.1,180.99) -- (316.1,180.06) ;
+\draw [shift={(319.1,180.04)}, rotate = 179.58] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da8297377857341832] 
+\draw    (187.57,181.19) -- (112.91,230) ;
+\draw [shift={(110.4,231.64)}, rotate = 326.83] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da08904615719613618] 
+\draw    (405.43,180.56) -- (404.91,61.35) ;
+\draw [shift={(404.9,58.35)}, rotate = 89.75] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da9366144153311752] 
+\draw    (405.43,180.56) -- (544.44,179.63) ;
+\draw [shift={(547.44,179.61)}, rotate = 179.62] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da7614094297851611] 
+\draw    (404.9,180.76) -- (330.24,229.56) ;
+\draw [shift={(327.73,231.21)}, rotate = 326.83] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Straight Lines [id:da3291756480075525] 
+\draw    (518.43,111.06) -- (549.44,111.1) ;
+\draw [shift={(552.44,111.11)}, rotate = 180.08] [fill={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.08]  [draw opacity=0] (7.14,-3.43) -- (0,0) -- (7.14,3.43) -- cycle    ;
+%Shape: Ellipse [id:dp0770880603579428] 
+\draw   (197.26,156.38) .. controls (197.26,154.02) and (199.12,152.1) .. (201.42,152.1) .. controls (203.71,152.1) and (205.57,154.02) .. (205.57,156.38) .. controls (205.57,158.74) and (203.71,160.66) .. (201.42,160.66) .. controls (199.12,160.66) and (197.26,158.74) .. (197.26,156.38) -- cycle ;
+%Straight Lines [id:da6298420311752707] 
+\draw    (201.79,162.83) -- (194.53,168.66) ;
+%Straight Lines [id:da2092514667028853] 
+\draw    (201.28,173.03) -- (201.42,160.66) ;
+%Straight Lines [id:da4300031637398506] 
+\draw    (208.53,168.24) -- (201.79,162.83) ;
+%Straight Lines [id:da5980630827246688] 
+\draw    (201.03,173.03) -- (197.58,178.87) ;
+%Straight Lines [id:da26717003594101174] 
+\draw    (205.48,178.45) -- (201.79,173.03) ;
+%Shape: Ellipse [id:dp2642504716539906] 
+\draw   (417.26,155.71) .. controls (417.26,153.35) and (419.12,151.43) .. (421.42,151.43) .. controls (423.71,151.43) and (425.57,153.35) .. (425.57,155.71) .. controls (425.57,158.07) and (423.71,159.99) .. (421.42,159.99) .. controls (419.12,159.99) and (417.26,158.07) .. (417.26,155.71) -- cycle ;
+%Straight Lines [id:da9751996986561148] 
+\draw    (421.79,162.16) -- (414.53,168) ;
+%Straight Lines [id:da9803939168196044] 
+\draw    (421.28,172.37) -- (421.42,159.99) ;
+%Straight Lines [id:da7613359399754204] 
+\draw    (428.53,167.58) -- (421.79,162.16) ;
+%Straight Lines [id:da6869526616097521] 
+\draw    (421.03,172.37) -- (417.58,178.2) ;
+%Straight Lines [id:da5152997890551331] 
+\draw    (425.48,177.78) -- (421.79,172.37) ;
+%Straight Lines [id:da4290029117359657] 
+\draw    (429.8,143.07) -- (428.53,149.17) ;
+%Straight Lines [id:da06426453510785024] 
+\draw    (480,175.83) -- (479.67,186.17) ;
+%Shape: Circle [id:dp06927713134489089] 
+\draw   (462.76,155.1) .. controls (462.76,145.81) and (470.29,138.28) .. (479.58,138.28) .. controls (488.87,138.28) and (496.4,145.81) .. (496.4,155.1) .. controls (496.4,164.39) and (488.87,171.92) .. (479.58,171.92) .. controls (470.29,171.92) and (462.76,164.39) .. (462.76,155.1) -- cycle ;
+%Straight Lines [id:da2220033323135241] 
+\draw    (472.36,170.12) -- (465.6,179.92) ;
+%Straight Lines [id:da566965436160475] 
+\draw    (487.76,169.52) -- (494.2,179.72) ;
+%Straight Lines [id:da1708419454950879] 
+\draw    (479.58,155.1) -- (487.76,148.92) ;
+%Straight Lines [id:da34509415442948455] 
+\draw    (479.58,155.1) -- (479.58,169.1) ;
+
+% Text Node
+\draw (173.87,167.95) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle O$
+\end{minipage}};
+% Text Node
+\draw (114.36,244.23) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle z$
+\end{minipage}};
+% Text Node
+\draw (323.89,189.46) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle x$
+\end{minipage}};
+% Text Node
+\draw (173.22,55.53) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle y$
+\end{minipage}};
+% Text Node
+\draw (388.2,166.51) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle O'$
+\end{minipage}};
+% Text Node
+\draw (333.69,245.8) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle z'$
+\end{minipage}};
+% Text Node
+\draw (544.22,193.02) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle x'$
+\end{minipage}};
+% Text Node
+\draw (390.55,55.1) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle y'$
+\end{minipage}};
+% Text Node
+\draw (252.05,75.6) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+K
+\end{minipage}};
+% Text Node
+\draw (466.05,73.6) node  [font=\large] [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+K'
+\end{minipage}};
+% Text Node
+\draw (534.43,85.39) node  [font=\large] [align=left] {\begin{minipage}[lt]{12.92pt}\setlength\topsep{0pt}
+$\displaystyle \vec{V}$
+\end{minipage}};
+% Text Node
+\draw (482.3,195.13) node   [align=left] {\begin{minipage}[lt]{8.67pt}\setlength\topsep{0pt}
+$\displaystyle x'$
+\end{minipage}};
+
+
+\end{tikzpicture}
+\end{figure}
+
+K': đặt đồng hồ tại vị trí $x'$, đo khoảng thời gian $\,\Delta t' = t_2'-t_1' $\\
+
+K: đo khoảng thời gian $\,\Delta t = t_2-t_1 $ \\
+
+$$\begin{cases}
+t_2 &= \dfrac{\dfrac{V}{c^2} \, x'}{\sqrt{1 - \dfrac{V^2}{c^2}}} + \dfrac{t_2'}{\sqrt{1  -\dfrac{V^2}{c^2}}} \\[30pt]
+t_1 &= \dfrac{\dfrac{V}{c^2} \, x'}{\sqrt{1 - \dfrac{V^2}{c^2}}} + \dfrac{t_1'}{\sqrt{1  -\dfrac{V^2}{c^2}}} 
+\end{cases} \quad \Rightarrow t_2 -t_1 = \dfrac{t_2'-t_1'}{\sqrt{1-\dfrac{V^2}{c^2}}}
+$$
+
+Hay $$\Delta t = \dfrac{\Delta t'}{\sqrt{1 - \dfrac{V^2}{c^2}}} > \Delta t'$$ \\
+
+Kết luận: sự chậm lại của thời gian 
+
+\newpage 
+{\centering \section*{VECTƠ VẬN TỐC VÀ VECTƠ GIA TỐC 4 CHIỀU} \par}
+
+Vectơ tọa độ 4 chiều để xác định 1 biến cố 
+$$x^\mu (ct, x,y,z); \quad \text{d}x^\mu (c\text{d}t ,\text{d}x, \text{d}y, \text{d}z ) $$
+
+Vi phân khoảng biến cố trong hqc quán tính K và K' 
+\begin{align*}
+  \text{d}s &= \sqrt{c^2 \text{d}t^2 - \text{d}x^2 - \text{d}y^2 - \text{d}z^2} \\[5pt]
+  &= \sqrt{c^2\text{d}t^2 - V^2\text{d}t^2} \\[3pt]
+  &= \sqrt{1 -\dfrac{V^2}{c^2} } \, c\,\text{d}t \\[5pt]
+\Rightarrow \quad \text{d}t &\,\sqrt{1 - \dfrac{V^2}{c^2}} = \dfrac{\text{d}s}{c}
+\end{align*}
+
+\begin{align*}
+  \text{d}s' &= \sqrt{c^2 \text{d}t'^2 - \text{d}x'^2 - \text{d}y'^2 - \text{d}z'^2} \\[5pt]
+  &= \sqrt{c^2\text{d}t'^2 - V'^2\text{d}t'^2} \\[3pt]
+  &= \sqrt{1 -\dfrac{V'^2}{c^2} } \, c\,\text{d}t' \\[5pt]
+\Rightarrow \quad \text{d}t' &\,\sqrt{1 - \dfrac{V'^2}{c^2}} = \dfrac{\text{d}s'}{c}
+\end{align*}
+
+Mà $\, \text{d}s =\text{d}s' \Rightarrow \dfrac{\text{d}s}{c} = \dfrac{\text{d}s'}{c}$
+
+$$\Rightarrow \quad \text{d}t \sqrt{1 - \dfrac{V^2}{c^2}}= \text{d}t' \sqrt{1 - \dfrac{V'^2}{c^2}} = \text{inv} = \text{d}t_0$$
+
+Vectơ vận tốc 4 chiều \\
+\begin{align*}
+u^\mu = \dfrac{\text{d}x^\mu}{\text{d}t_0} &= \left(\dfrac{c\text{ d}t}{\sqrt{1 - \dfrac{V^2}{c^2}} \, \text{d}t} , \dfrac{\text{d}x}{\sqrt{1 - \dfrac{V^2}{c^2}}\, \text{d}t} ,\dfrac{\text{d}y}{\sqrt{1 - \dfrac{V^2}{c^2}}\, \text{d}t}, \dfrac{\text{d}z}{\sqrt{1 - \dfrac{V^2}{c^2}}\,\text{d}t}
+\right) \\ 
+&=  \left(\dfrac{c}{\sqrt{1 - \dfrac{V^2}{c^2}}} , \dfrac{V_x}{\sqrt{1 - \dfrac{V^2}{c^2}}} ,\dfrac{V_y}{\sqrt{1 - \dfrac{V^2}{c^2}}}, \dfrac{V_z}{\sqrt{1 - \dfrac{V^2}{c^2}}} \right) \\
+&= \left( \dfrac{c}{\sqrt{1- \dfrac{V^2}{c^2}}} , \dfrac{\vec{V}}{\sqrt{1- \dfrac{V^2}{c^2}}}  \right)
+\end{align*}
+\newpage 
+
+Vectơ gia tốc 4 chiều \\
+\begin{align*}
+a^\mu &= \dfrac{\text{d}u^\mu}{\text{d}t_0} = \dfrac{\text{d}^2  x^\mu}{\text{d}t_0^2} \\
+a^0 &= \dfrac{\text{d}u^0}{\text{d}t_0} = \dfrac{\text{d}\left( \dfrac{c}{\sqrt{1 -\dfrac{V^2}{c^2}}} \right)}{\sqrt{1- \dfrac{V^2}{c^2}} \text{d}t}
+= \dfrac{V\text{d}V}{c \sqrt{ 1 - \dfrac{V^2}{c^2} }\text{ d}t}  \\
+a^1 &= \dfrac{\text{d}V_x}{\text{d}t} = \dfrac{\text{d}\left( \dfrac{V_x}{\sqrt{1 -\dfrac{V^2}{c^2}}} \right)}{\sqrt{1- \dfrac{V^2}{c^2}} \text{ d}t} \\
+&= \dfrac{1}{\sqrt{1 -\dfrac{V^2}{c^2}} \text{ d}t} \left( \dfrac{\text{d}V_x}{\sqrt{1 - \dfrac{V^2}{c^2}}} + \dfrac{V_x V\text{d}V}{c^2 \left( 1- \dfrac{V^2}{c^2}  \right)^{3/2} } \right) \\
+&= \dfrac{\text{d}V_x}{\left( 1 - \dfrac{V^2}{c^2} \right) \text{ d}t} + \dfrac{V_xV \text{d}V}{c^2 \left( 1- \dfrac{V^2}{c^2} \right) \text{ d}t} 
+\end{align*}
+
+$a^2, a^3$ tương tự $a^1$ \\
+
+\textit{Chú ý}: $\, u^\mu . u_\mu = u^2$
+\begin{align*}
+&= \dfrac{c^2}{1- \dfrac{V^2}{c^2}} - \dfrac{V_x^2}{1- \dfrac{V^2}{c^2}} - \dfrac{V_y^2}{1- \dfrac{V^2}{c^2}} - \dfrac{V_z^2}{1- \dfrac{V^2}{c^2}} \\[10pt] 
+&= \dfrac{c^2}{1 - \dfrac{V^2}{c^2}} - \dfrac{V^2}{1-\dfrac{V^2}{c^2}} = c^2
+\end{align*}
+
+$u^2 = u^{\mu} . u_\mu = c^2 = \text{inv}$ 
+$$\Rightarrow \quad \dfrac{\text{d} \left( u^\mu .u_\mu \right)}{\text{d}t_0} = \dfrac{\text{d}c^2}{\text{d}t_0} = \dfrac{\text{d}c^2}{\sqrt{1- \dfrac{V^2}{c^2}} \text{ d}t} = 0$$ \\
+
+Mà $\text{d }\left( u^\mu . u_\mu \right) = \left( \text{d} u^\mu \right) \, u_\mu + u^\mu \, \text{d}u_\mu = 2u_\mu \text{ d}u^\mu$  \\
+$$\Rightarrow  \quad \dfrac{\text{d}\left(u^\mu. u_\mu  \right)}{\text{d}t_0} = 2 u_\mu \, \dfrac{\text{d}u^\mu}{\text{d}t} = 2u_\mu\,a^\mu = 0$$
+$\Rightarrow (u,a) = 0  \rightarrow a^\mu \text{ trực giao } u^\mu$ 
+
+\newpage 
+{\centering \section*{HÀM LAGRANGE, XUNG LƯỢNG VÀ NĂNG LƯỢNG CỦA MỘT HẠT TỰ DO}\par}
+  
+Hàm Lagrange của hạt chuyển động tự do  
+
+$$L = -m_0\,c^2\sqrt{1- \dfrac{V^2}{c^2}} $$ 
+
+$m_0 \, $ khối lượng nghỉ \\
+
+$m = m_0 \sqrt{1 -\dfrac{V^2}{c^2}}\,$ khối lượng tương đối tính \\
+
+Xung lượng của hạt tự do 
+\begin{align*}
+\vec{P} &= \dfrac{\partial L}{\partial \vec{V}} = \dfrac{-\partial }{\partial \vec{V}} \left( -m_0 \,c^2 \sqrt{1 -\dfrac{V^2}{c^2}} \,\right) \,, \quad(\vec{V})^2 = V^2  \\
+&= -m_0 \,c^2 \dfrac{\partial}{\partial \vec{V}} \left( 1 - \dfrac{V^2}{c^2}\right)^{1/2}  = \dfrac{- m_0 \,c^2 \dfrac{1}{2} \left( -\dfrac{2\vec{V}}{c^2}  \right) }{ \left( 1-\dfrac{V^2}{c^2} \right)^{1/2}}   \\ 
+&= \dfrac{m_0 }{\sqrt{1 - \dfrac{V^2}{c^2}}} \, \vec{V} = m \vec{V}  \,,  \quad  \text{với } \,m =\dfrac{m_0}{\sqrt{1 -\dfrac{V^2}{c^2}}} 
+\end{align*}
+$$\boxed{\vec{P} = m\vec{V} = \dfrac{m_0 \vec{V}}{\sqrt{1 - \dfrac{V^2}{c^2}}}} $$
+
+Năng lượng \\
+\begin{align*}
+E = H &= \sum_{k=1}^{s} p_k \, \dot{q}_k - L \\
+&=\vec{P} \, \vec{V} - L = \dfrac{m_0}{ \sqrt{1 - \dfrac{V^2}{c^2}}} \vec{V} .\vec{V} + m_0 \, c^2 \sqrt{1 - \dfrac{V^2}{c^2}} \\[10pt]
+&= \dfrac{m_0}{\sqrt{1 - \dfrac{V^2}{c^2}}} \left[ V^2 + c^2\left( 1 - \dfrac{V^2}{c^2} \right) \right] = \dfrac{m_0 \, c^2}{\sqrt{1 - \dfrac{V^2}{c^2}}}  
+\end{align*}
+
+$$\boxed{E = H = \dfrac{m_0\,c^2}{\sqrt{1 -\dfrac{V^2}{c^2}}}  = m\,c^2 }$$
+
+\newpage
+
+Định nghĩa xung lượng 4 chiều :  xung lượng và
+năng lượng của hạt được thống nhất trong một đại lượng
+chung gọi là xung lượng bốn chiều. \\
+
+Vectơ xung lượng 4 chiều: \\
+$$P^{\mu} \left( \dfrac{E}{c} , \dfrac{m_0 \,\vec{V}}{\sqrt{1 - \dfrac{V^2}{c^2}}} \right)$$
+
+Khi chuyển từ hệ quy chiếu quán tính K sang hệ quy
+chiếu quán tính K' hay chuyển ngược lại, các thành phần
+của vectơ xung lượng bốn chiểu biến đổi theo công thức
+biến đổi Lorentz: \\
+\begin{align*}
+\dfrac{E}{c}&= \dfrac{\dfrac{E'}{c} + \beta P'_x}{\sqrt{1 - \beta ^2}} \\
+P_x &= \dfrac{P'_x + \beta \left( \dfrac{E'}{c}\right)}{\sqrt{1 - \beta ^2}} \\
+P_y &= P'_y  \\
+P_z & = P'_z
+\end{align*}
+
+Bình phương của vectơ xung lượng bốn chiều là một
+đại lượng bất biến:
+
+\begin{align*}
+P^2 = P^{\mu} \, P_\mu &= \dfrac{E^2}{c^2} - \dfrac{m_0^2 \, V^2}{1 - \dfrac{V^2}{c^2}} = \dfrac{E^2}{c^2} - \dfrac{m_0^2 \, c^2 V^2}{c^2 - V^2}
+\end{align*}
+
+Thay $E^2 = \dfrac{m_0^2}{1 - \dfrac{V^2}{c^2}} \, c^4$ 
+\begin{align*}
+\Rightarrow \quad P^2 &= \dfrac{m_0^2 \, c^4}{c^2 \left( 1 -\dfrac{V^2}{c^2}\right)} - \dfrac{m_0^2 \,c^2 V^2}{c^2 - V^2} \\[7pt]
+&= \dfrac{m_0^2 \, c^4 }{c^2 - V^2} - \dfrac{m_0^2 \, c^2 V^2}{c^2 - V^2} = \dfrac{m_0^2 \, c^2 \left( c^2 - V^2\right)}{c^2 - V^2} = m_0^2 \, c^2 = \text{inv}
+\end{align*}
+$$\Rightarrow P^2 = \dfrac{E^2}{c^2} - \vec{P}\,^2 = m_0^2 \, c^2 $$
+
+Đạo hàm hai vế biểu thức trên theo thời gian, ta được 
+$$\dfrac{E}{c^2} \dfrac{\text{d}E}{\text{d}t} - \vec{P} \, \dfrac{\text{d}\vec{P}}{\text{d}t} = 0 \text{ hay } \dfrac{\text{d}E}{\text{d}t} = \dfrac{c^2 \vec{P}}{E}\dfrac{\text{d}\vec{P}}{\text{d}t} = \vec{V} \, \dfrac{\text{d}\vec{P}}{\text{d}t}$$
+
+Khi $\dfrac{\text{d}\vec{P}}{\text{d}t} = 0 $ thì $\dfrac{\text{d}E}{\text{d}t} = 0$ nghĩa là nếu xung lượng của hạt là đại lượng 
+bảo toàn thì năng lượng của nó cũng là đại lượng bảo toàn 
+
+\setcounter{equation}{0}
+Biểu thức liên hệ giữa $E, \vec{P}$ \\
+\begin{equation}
+E = \dfrac{m_0 \,c^2}{\sqrt{1 - \dfrac{V^2}{c^2}}} \Rightarrow E^2 = \dfrac{m_0^2 \, c^4}{1 - \dfrac{V^2}{c^2}} 
+\label{eq:1}
+\end{equation}
+\vspace{0.3cm}
+\begin{equation}
+\vec{P} = \dfrac{m_0}{\sqrt{1 - \dfrac{V^2}{c^2}}} \, \vec{V} \Rightarrow \vec{P}\,^2 = \dfrac{m_0^2 \,V^2}{1 - \dfrac{V^2}{c^2}}
+\label{eq:2}
+\end{equation}
+
+Từ \eqref{eq:2} $\rightarrow  \vec{P}\,^2 - \dfrac{\vec{P}\,^2}{ c^2} V^2  = m_0 \, V^2 \Rightarrow \vec{P}\,^2  = \left( m_0^2 + \dfrac{\vec{P}\,^2}{c^2} \right) V^2$
+$$\Rightarrow V^2 =\dfrac{\vec{P}\,^2}{m_0^2 + \dfrac{\vec{P}\,^2}{c^2}} \quad \text{ thay vào \eqref{eq:1} } $$
+\begin{align*}
+E^2 &= \dfrac{m_0^2 \, c^4}{1 - \dfrac{1}{c^2}\left( \dfrac{\vec{P}\,^2}{m_0^2 + \dfrac{\vec{P}\,^2}{c^2}} \right)} = \dfrac{m_0^2 \, c^4}{1 - \dfrac{\vec{P}\,^2}{m_0^2 \, c^2 + \vec{P}\,^2} } \\
+&= \dfrac{m_0^2 \, c^4 \left( m_0^2 \, c^2 + \vec{P}\,^2 \right)}{m_0^2 \, c^2 + \vec{P}\,^2 - \vec{P}\,^2} = \dfrac{m_0^2 \, c^4 \left( m_0^2 \, c^2 + \vec{P}\,^2 \right)}{m_0^2 \, c^2 } \Rightarrow \boxed{E^2 = c^2 \vec{P}\,^2 + m_0^2 \, c^4}
+\end{align*}
+\newpage 
+\begin{enumerate}[1.]
+\item Các phương trình chuyển động. Các vectơ vận tốc và gia tốc 
+\item Vectơ vận tốc và gia tốc của chất điểm trong các hệ quy chiếu khác nhau. Định lý cộng vận tốc và gia tốc 
+\item Chuyển động của chất điểm trong hqc phi quán tính. Các lực quán tính 
+\item Bài toán hai vật. Chuyển động trong trường xuyên tâm. Bài toán Kepler 
+\item Nguyên lí biến phần Hamilton, từ nguyên lý này hãy thành lập các phương trình Lagrange loại II trong tọa độ suy rộng và các phương trình chính tắc Hamilton 
+\item Từ các tính chất của không gian và thời gian trong hqc quán tính và các phương trình Lagrange loại II, hãy thành lập: Định lý biến thiên và định luật bảo toàn xung lượng của cơ hệ; 
+Định lí biến thiên và định luật bảo toàn xung lượng của cơ hệ; Định lý biến thiên và định luật bảo toàn moment xung lượng của cơ hệ; Định lý biến thiên và định luật bảo toàn 
+cơ năng của cơ hệ
+\item Viết biểu thức vận tốc và gia tốc của điểm thuộc vật rắn. Hãy chỉ ra vận tốc góc của vật rắn không phụ thuộc vào vị trí của gốc. Thành lập các phương trình động học Euler 
+\item Động năng của vật rắn. Moment xung lượng của vật rắn 
+\item Các phương trình chuyển động của vật rắn 
+\item Trình bày nội dung hai tiên đề của nguyên lý tương đối Anhxtanh. Từ đó thiết lập phép biến đổi Lorentz; Thiết lập biểu thức vectơ vận tốc và gia tốc 4 chiều
+\item Xung lượng 4 chiều: Nêu định nghĩa, các thành phần của xung lượng 4 chiều; Trình bày phép biến đổi Lorentz của các thành phần xung lượng 4 chiều. Chứng tỏ rằng bình phương của xung 
+ lượng 4 chiều là một đại lượng bất biến đối với phép biến đổi Lorentz. Tìm biểu thức liên hệ giữa xung lượng tương đối tính và năng lượng tương đối tính. Chứng tỏ răng nếu xung lượng của hạt được bảo toàn thì năng lượng của nó cũng bảo toàn
+\end{enumerate}
+
+\end{document} 
+
+
+
+  
